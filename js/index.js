@@ -1,42 +1,4 @@
-var app = angular.module("portfolio", []);
-
-// app.directive("scrollspy", function ($window, $timeout) {
-//     return function (scope, element, attrs) {
-//         var scrolledLately = 0;
-//         angular.element($window).bind("scroll", function () {
-//             if (!scrolledLately) {
-//                 scrolledLately = 1;
-//                 if (this.pageYOffset >= 100) {
-
-//                 }
-//                 $timeout(function () {
-//                     scrolledLately = 0;
-//                 }, 100)
-//             }
-//             // if (this.pageYOffset >= 100) {
-//             //     console.log("more")
-//             // } else {   
-//             //     console.log("less")
-//             // }
-//             // scope.$apply();
-//         });
-//     };
-// });
-
-app.directive('scrollToItem', function () {
-    return {
-        restrict: 'A',
-        scope: {
-            scrollTo: "@"
-        },
-        link: function (scope, $elm, attr) {
-
-            $elm.on('click', function () {
-                $('html,body').animate({ scrollTop: $(scope.scrollTo).offset().top }, "slow");
-            });
-        }
-    }
-})
+var app = angular.module("portfolio", ['duScroll']);
 
 app.controller("appCtrl", function ($scope) {
     $scope.portfolioItems = [
@@ -65,5 +27,5 @@ app.controller("appCtrl", function ($scope) {
 
     $scope.imageSrc = "https://s-media-cache-ak0.pinimg.com/736x/4d/b7/b7/4db7b7ecb39c4eebc5b8f5358773e4a2.jpg";
     $scope.aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-});
+}).value('duScrollOffset', 30);
 
