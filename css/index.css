@@ -29,8 +29,9 @@ body {
   padding: 0;
   height: 250px;
   background-color: #ddd;
+  background-size: cover;
 }
-/* line 36, ../scss/index.scss */
+/* line 37, ../scss/index.scss */
 .portfolio-container .portfolio-text {
   background-color: #fff;
   width: 100%;
@@ -50,18 +51,18 @@ body {
   font-size: 1.1em;
   cursor: pointer;
 }
-/* line 51, ../scss/index.scss */
+/* line 52, ../scss/index.scss */
 .portfolio-container .portfolio-text:hover, .portfolio-container .portfolio-text.active {
   opacity: 0.8;
   font-size: 1em;
 }
 
-/* line 59, ../scss/index.scss */
+/* line 60, ../scss/index.scss */
 .carousel-caption--add-shadow-to-items * {
   text-shadow: 0px 0px 10px black;
 }
 
-/* line 64, ../scss/index.scss */
+/* line 65, ../scss/index.scss */
 .about {
   text-align: justify;
   background-color: #666;
@@ -69,7 +70,7 @@ body {
   min-height: 400px;
   position: relative;
 }
-/* line 70, ../scss/index.scss */
+/* line 71, ../scss/index.scss */
 .about .about__contact {
   display: flex;
   flex-direction: column;
@@ -77,30 +78,30 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-/* line 76, ../scss/index.scss */
+/* line 77, ../scss/index.scss */
 .about .about__contact .contact__item {
   display: flex;
   align-items: center;
   text-align: left;
 }
-/* line 80, ../scss/index.scss */
+/* line 81, ../scss/index.scss */
 .about .about__contact .contact__item i {
   margin: 5px;
 }
-/* line 85, ../scss/index.scss */
+/* line 86, ../scss/index.scss */
 .about .about__text {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 400px;
 }
-/* line 90, ../scss/index.scss */
+/* line 91, ../scss/index.scss */
 .about .about__text .about__text__name {
   text-align: center;
   margin-bottom: 10px;
   font-size: 1.3em;
 }
-/* line 96, ../scss/index.scss */
+/* line 97, ../scss/index.scss */
 .about .about__image {
   height: 400px;
   border-radius: 50%;
@@ -108,7 +109,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-/* line 102, ../scss/index.scss */
+/* line 103, ../scss/index.scss */
 .about .about__image div {
   height: 250px;
   width: 250px;
@@ -117,7 +118,7 @@ body {
   background-position: center;
 }
 
-/* line 112, ../scss/index.scss */
+/* line 113, ../scss/index.scss */
 .footer {
   border-top: 1px solid #ddd;
   height: 50px;
@@ -128,45 +129,45 @@ body {
   padding: 10px;
 }
 
-/* line 122, ../scss/index.scss */
+/* line 123, ../scss/index.scss */
 .navbar-brand {
   cursor: default;
 }
 
-/* line 126, ../scss/index.scss */
+/* line 127, ../scss/index.scss */
 .nav-item {
   cursor: pointer;
 }
-/* line 128, ../scss/index.scss */
+/* line 129, ../scss/index.scss */
 .nav-item.active {
   border-bottom: 1px solid black;
 }
 
-/* line 133, ../scss/index.scss */
+/* line 134, ../scss/index.scss */
 .modal-lg-custom {
   max-width: 80%;
 }
 
-/* line 137, ../scss/index.scss */
+/* line 138, ../scss/index.scss */
 body.modal-open {
   margin-right: 0 !important;
   padding-right: 17px !important;
 }
 
-/* line 142, ../scss/index.scss */
+/* line 143, ../scss/index.scss */
 .modal-content {
   background-color: #666;
   color: white !important;
 }
 
-/* line 147, ../scss/index.scss */
+/* line 148, ../scss/index.scss */
 .modal-images-list {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-/* line 152, ../scss/index.scss */
+/* line 153, ../scss/index.scss */
 .modal-images-list .modal-image {
   margin: 3px;
   overflow: hidden;
@@ -176,7 +177,7 @@ body.modal-open {
   justify-content: center;
 }
 
-/* line 162, ../scss/index.scss */
+/* line 163, ../scss/index.scss */
 .modal-showcase-image {
   display: flex;
   justify-content: center;
