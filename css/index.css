@@ -174,9 +174,10 @@ body.modal-open {
   height: 150px;
   background-size: cover;
   background-position: center;
+  cursor: pointer;
 }
 
-/* line 162, ../scss/index.scss */
+/* line 163, ../scss/index.scss */
 .modal-showcase-image {
   display: flex;
   justify-content: center;
@@ -184,7 +185,7 @@ body.modal-open {
   height: auto;
 }
 
-/* line 169, ../scss/index.scss */
+/* line 170, ../scss/index.scss */
 .divider-horizontal {
   width: 60%;
   margin: 10px 20%;
