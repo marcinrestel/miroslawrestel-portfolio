@@ -40,6 +40,8 @@ app.controller("appCtrl", function ($scope) {
 
         $('#portfolio-modal').on('hidden.bs.modal', function (e) {
             angular.element(event.currentTarget).removeClass('active');
+        }).modal({
+            keyboard: true
         })
     }
 });
