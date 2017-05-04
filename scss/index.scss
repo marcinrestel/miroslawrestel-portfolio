@@ -1,5 +1,4 @@
 $color: black;
-
 @mixin transition($args...) {
     -webkit-transition: $args;
     -moz-transition: $args;
@@ -47,8 +46,8 @@ body {
         @include transition(all 0.3s);
         opacity: 0;
         font-size: 1.1em;
-        cursor:pointer;
-        &:hover {
+        cursor: pointer;
+        &:hover, &.active{
             opacity: 1;
             font-size: 1em;
         }
@@ -125,16 +124,16 @@ body {
     }
 }
 
-.modal-lg-custom{
+.modal-lg-custom {
     max-width: 80%;
 }
 
 body.modal-open {
-  margin-right: 0 !important;
-  padding-right: 17px !important;
+    margin-right: 0 !important;
+    padding-right: 17px !important;
 }
 
-.modal-content{
+.modal-content {
     background-color: #666;
-    color:white !important;
+    color: white !important;
 }
