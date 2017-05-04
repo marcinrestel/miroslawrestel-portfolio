@@ -36,13 +36,13 @@ app.controller("appCtrl", function ($scope) {
         $scope.modalDescription = $scope.portfolioItems[clickedItemID].description;
         $scope.modalImages = $scope.portfolioItems[clickedItemID].imagesList;
         $scope.modalShowcaseImage = $scope.modalImages[0];
-        $('#portfolio-modal').modal('show');
+       angular.element('#portfolio-modal').modal('show', {
+           keyboard: true
+       });
 
         $('#portfolio-modal').on('hidden.bs.modal', function (e) {
             angular.element(event.currentTarget).removeClass('active');
-        }).modal({
-            keyboard: true
-        })
+        });
     }
 });
 
