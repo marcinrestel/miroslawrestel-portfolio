@@ -183,3 +183,10 @@ body.modal-open {
   width: 100%;
   height: auto;
 }
+
+/* line 169, ../scss/index.scss */
+.divider-horizontal {
+  width: 60%;
+  margin: 10px 20%;
+  border-bottom: 1px solid #ddd;
+}
