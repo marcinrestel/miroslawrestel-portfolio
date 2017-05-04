@@ -80,8 +80,7 @@
                             <img src="{{modalShowcaseImage}}" />
                         </div>
                         <div class="modal-images-list">
-                            <div class="modal-image" ng-repeat="image in modalImages">
-                                <img src="{{image}}" />
+                            <div class="modal-image" ng-style="{'background-image':'url({{image}})'}" ng-repeat="image in modalImages">
                             </div>
                         </div>
                         <p>

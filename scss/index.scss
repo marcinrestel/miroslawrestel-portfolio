@@ -152,11 +152,10 @@ body.modal-open {
     flex-wrap: wrap;
     & .modal-image {
         margin: 3px;
-        overflow: hidden;
         width: 150px;
         height: 150px;
-        display: flex;
-        justify-content: center;
+        background-size: cover;
+        background-position: center;
     }
 }
 
