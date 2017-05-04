@@ -135,5 +135,22 @@ body {
 }
 /* line 123, ../scss/index.scss */
 .nav-item.active {
-  border-bottom: 1px solid blue;
+  border-bottom: 1px solid black;
+}
+
+/* line 128, ../scss/index.scss */
+.modal-lg-custom {
+  max-width: 80%;
+}
+
+/* line 132, ../scss/index.scss */
+body.modal-open {
+  margin-right: 0 !important;
+  padding-right: 17px !important;
+}
+
+/* line 137, ../scss/index.scss */
+.modal-content {
+  background-color: #666;
+  color: white !important;
 }

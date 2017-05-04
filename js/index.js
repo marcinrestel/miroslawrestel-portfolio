@@ -2,21 +2,21 @@ var app = angular.module("portfolio", ['duScroll']);
 
 app.controller("appCtrl", function ($scope) {
     $scope.portfolioItems = [
-        { name: "MODELOWANIE", description: "Lorem ipsum dolor sit amet" },
-        { name: "TABULA RASA", description: "Lorem ipsum dolor sit amet" },
-        { name: "POŻEGNANIE Z AFRYKĄ", description: "Lorem ipsum dolor sit amet" },
-        { name: "BIBLIA GUTENBERGA", description: "Lorem ipsum dolor sit amet" },
-        { name: "item5", description: "Lorem ipsum dolor sit amet" },
-        { name: "item6", description: "Lorem ipsum dolor sit amet" },
-        { name: "item7", description: "Lorem ipsum dolor sit amet" },
-        { name: "dupa8", description: "Lorem ipsum dolor sit amet" },
-        { name: "item9", description: "Lorem ipsum dolor sit amet" },
-        { name: "item10", description: "Lorem ipsum dolor sit amet" },
-        { name: "item11", description: "Lorem ipsum dolor sit amet" },
-        { name: "item12", description: "Lorem ipsum dolor sit amet" },
-        { name: "item13", description: "Lorem ipsum dolor sit amet" },
-        { name: "item14", description: "Lorem ipsum dolor sit amet" },
-        { name: "item15", description: "Lorem ipsum dolor sit amet" }
+        { name: "MODELOWANIE", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "TABULA RASA", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "POŻEGNANIE Z AFRYKĄ", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "BIBLIA GUTENBERGA", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item5", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item6", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item7", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "dupa8", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item9", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item10", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item11", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item12", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item13", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item14", shortDescription: "Lorem ipsum dolor sit amet" },
+        { name: "item15", shortDescription: "Lorem ipsum dolor sit amet" }
     ]
 
     $scope.carouselItems = [
@@ -27,5 +27,13 @@ app.controller("appCtrl", function ($scope) {
 
     $scope.imageSrc = "https://s-media-cache-ak0.pinimg.com/736x/4d/b7/b7/4db7b7ecb39c4eebc5b8f5358773e4a2.jpg";
     $scope.aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-}).value('duScrollOffset', 30);
+
+    $scope.showPortfolioItem = function(event){
+        let clickedItemID = event.currentTarget.attributes['data-id'].value;
+        $scope.modalTitle = $scope.portfolioItems[clickedItemID].name;
+        $('#portfolio-modal').modal('show');
+    }
+});
+
+
 

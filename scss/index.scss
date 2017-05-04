@@ -1,4 +1,4 @@
-$color: blue;
+$color: black;
 
 @mixin transition($args...) {
     -webkit-transition: $args;
@@ -123,4 +123,18 @@ body {
     &.active {
         border-bottom: 1px solid $color;
     }
+}
+
+.modal-lg-custom{
+    max-width: 80%;
+}
+
+body.modal-open {
+  margin-right: 0 !important;
+  padding-right: 17px !important;
+}
+
+.modal-content{
+    background-color: #666;
+    color:white !important;
 }
