@@ -151,12 +151,23 @@ body.modal-open {
     justify-content: center;
     flex-wrap: wrap;
     & .modal-image {
-        margin: 3px;
+        margin: 3px 6px;
         width: 150px;
         height: 150px;
         background-size: cover;
         background-position: center;
         cursor: pointer;
+        transition: all 0.3s;
+        &:hover {
+            margin: 0px 3px;
+            width: 156px;
+            height: 156px;
+        }
+        &.active {
+            margin: -2px 1px;
+            width: 160px;
+            height: 160px;
+        }
     }
 }
 
@@ -167,7 +178,7 @@ body.modal-open {
     height: auto;
 }
 
-.divider-horizontal{
+.divider-horizontal {
     width: 60%;
     margin: 10px 20%;
     border-bottom: 1px solid #ddd;

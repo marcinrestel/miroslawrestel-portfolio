@@ -169,15 +169,28 @@ body.modal-open {
 }
 /* line 153, ../scss/index.scss */
 .modal-images-list .modal-image {
-  margin: 3px;
+  margin: 3px 6px;
   width: 150px;
   height: 150px;
   background-size: cover;
   background-position: center;
   cursor: pointer;
+  transition: all 0.3s;
+}
+/* line 161, ../scss/index.scss */
+.modal-images-list .modal-image:hover {
+  margin: 0px 3px;
+  width: 156px;
+  height: 156px;
+}
+/* line 166, ../scss/index.scss */
+.modal-images-list .modal-image.active {
+  margin: -2px 1px;
+  width: 160px;
+  height: 160px;
 }
 
-/* line 163, ../scss/index.scss */
+/* line 174, ../scss/index.scss */
 .modal-showcase-image {
   display: flex;
   justify-content: center;
@@ -185,7 +198,7 @@ body.modal-open {
   height: auto;
 }
 
-/* line 170, ../scss/index.scss */
+/* line 181, ../scss/index.scss */
 .divider-horizontal {
   width: 60%;
   margin: 10px 20%;

@@ -36,9 +36,14 @@ app.controller("appCtrl", function ($scope, $window) {
         $scope.modalDescription = $scope.portfolioItems[clickedItemID].description;
         $scope.modalImages = $scope.portfolioItems[clickedItemID].imagesList;
         $scope.modalShowcaseImage = $scope.modalImages[0];
+
         angular.element('#portfolio-modal').modal('show', {
             keyboard: true
         });
+
+        $('#portfolio-modal').on('shown.bs.modal', function () {
+            angular.element(".js-modal-image").first().addClass('active');
+        })
 
         $('#portfolio-modal').on('hidden.bs.modal', function (e) {
             angular.element(event.currentTarget).removeClass('active');
@@ -46,7 +51,9 @@ app.controller("appCtrl", function ($scope, $window) {
     }
 
     $scope.changeModalShowcaseImage = function (event) {
-        $scope.modalShowcaseImage = event.target.attributes['data-image'].value;
+        $scope.modalShowcaseImage = event.currentTarget.attributes['data-image'].value;
+        angular.element(".modal .active").removeClass("active");
+        angular.element(event.target).addClass('active');
     }
 });
 
