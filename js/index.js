@@ -1,6 +1,38 @@
 var app = angular.module("portfolio", ['duScroll']);
 
 app.controller("appCtrl", function ($scope, $window) {
+    $scope.showPortfolioItem = function (event) {
+        let clickedItemID = event.currentTarget.attributes['data-id'].value;
+        angular.element(event.currentTarget).addClass('active');
+
+        $scope.modalTitle = $scope.portfolioItems[clickedItemID].name;
+        $scope.modalDescription = $scope.portfolioItems[clickedItemID].description;
+        $scope.modalImages = $scope.portfolioItems[clickedItemID].imagesList;
+        $scope.modalShowcaseImage = $scope.modalImages[0];
+
+        angular.element('#portfolio-modal').modal('show', {
+            keyboard: true
+        });
+
+        $('#portfolio-modal').on('shown.bs.modal', function () {
+            angular.element(".js-modal-image.active").removeClass("active");
+            angular.element(".js-modal-image").first().addClass('active');
+        })
+
+        $('#portfolio-modal').on('hidden.bs.modal', function (e) {
+            angular.element(event.currentTarget).removeClass('active');
+        });
+    }
+
+    $scope.changeModalShowcaseImage = function (event) {
+        $scope.modalShowcaseImage = event.currentTarget.attributes['data-image'].value;
+        angular.element(".js-modal-image.active").removeClass("active");
+        angular.element(event.target).addClass('active');
+    }
+
+    $scope.aboutImageSrc = "https://s-media-cache-ak0.pinimg.com/736x/4d/b7/b7/4db7b7ecb39c4eebc5b8f5358773e4a2.jpg";
+    $scope.aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+
     $scope.portfolioItems = [
         { name: "MODELOWANIE", shortDescription: "Lorem ipsum dolor sit amet", portfolioItemImage: "http://webneel.com/wallpaper/sites/default/files/images/04-2013/natural-scenery-wallpaper.preview.jpg", imagesList: ["http://webneel.com/wallpaper/sites/default/files/images/04-2013/natural-scenery-wallpaper.preview.jpg", "http://images.all-free-download.com/images/graphiclarge/beautiful_nature_landscape_03_hd_picture_166205.jpg", "http://www.wallpapereast.com/static/images/spring-in-nature-wide-wallpaper-603794.jpg", "http://webneel.com/daily/sites/default/files/images/daily/09-2014/2-nature-photography-pedraterrinha.jpg"], description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo" },
         { name: "TABULA RASA", shortDescription: "Lorem ipsum dolor sit amet", portfolioItemImage: "http://webneel.com/daily/sites/default/files/images/daily/09-2014/2-nature-photography-pedraterrinha.jpg", imagesList: ["http://webneel.com/wallpaper/sites/default/files/images/04-2013/natural-scenery-wallpaper.preview.jpg", "http://images.all-free-download.com/images/graphiclarge/beautiful_nature_landscape_03_hd_picture_166205.jpg", "http://www.wallpapereast.com/static/images/spring-in-nature-wide-wallpaper-603794.jpg", "http://webneel.com/daily/sites/default/files/images/daily/09-2014/2-nature-photography-pedraterrinha.jpg"], description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo" },
@@ -24,37 +56,6 @@ app.controller("appCtrl", function ($scope, $window) {
         { name: "POŻEGNANIE Z AFRYKĄ", description: "Lorem ipsum dolor sit amed", src: "http://webneel.com/daily/sites/default/files/images/daily/09-2014/2-nature-photography-pedraterrinha.jpg" },
         { name: "BIBLIA GUTENBERGA", description: "Lorem ipsum dolor sit amed", src: "http://webneel.com/wallpaper/sites/default/files/images/04-2013/natural-scenery-wallpaper.preview.jpg" }
     ]
-
-    $scope.aboutImageSrc = "https://s-media-cache-ak0.pinimg.com/736x/4d/b7/b7/4db7b7ecb39c4eebc5b8f5358773e4a2.jpg";
-    $scope.aboutText = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
-    $scope.showPortfolioItem = function (event) {
-        let clickedItemID = event.currentTarget.attributes['data-id'].value;
-        angular.element(event.currentTarget).addClass('active');
-
-        $scope.modalTitle = $scope.portfolioItems[clickedItemID].name;
-        $scope.modalDescription = $scope.portfolioItems[clickedItemID].description;
-        $scope.modalImages = $scope.portfolioItems[clickedItemID].imagesList;
-        $scope.modalShowcaseImage = $scope.modalImages[0];
-
-        angular.element('#portfolio-modal').modal('show', {
-            keyboard: true
-        });
-
-        $('#portfolio-modal').on('shown.bs.modal', function () {
-            angular.element(".js-modal-image").first().addClass('active');
-        })
-
-        $('#portfolio-modal').on('hidden.bs.modal', function (e) {
-            angular.element(event.currentTarget).removeClass('active');
-        });
-    }
-
-    $scope.changeModalShowcaseImage = function (event) {
-        $scope.modalShowcaseImage = event.currentTarget.attributes['data-image'].value;
-        angular.element(".modal .active").removeClass("active");
-        angular.element(event.target).addClass('active');
-    }
 });
 
 
