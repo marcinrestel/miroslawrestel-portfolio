@@ -111,13 +111,13 @@ body {
 /* line 103, ../scss/index.scss */
 .about .about__image {
   height: 400px;
-  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* line 109, ../scss/index.scss */
+/* line 108, ../scss/index.scss */
 .about .about__image div {
+  border: 1px solid #ddd;
   height: 250px;
   width: 250px;
   background-size: cover;

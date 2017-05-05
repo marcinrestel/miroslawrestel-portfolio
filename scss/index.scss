@@ -102,11 +102,11 @@ body {
     }
     & .about__image {
         height: 400px;
-        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
         & div {
+            border: 1px solid #ddd;
             height: 250px;
             width: 250px;
             background-size: cover;
