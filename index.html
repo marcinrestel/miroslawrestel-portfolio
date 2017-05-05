@@ -78,7 +78,8 @@
                     </div>
                     <div class="modal-body">
                         <div class="modal-showcase-image">
-                            <img src="{{modalShowcaseImage}}" />
+                            <div ng-style="{'background-image':'url(' + modalShowcaseImage + ')'}"></div>
+                            <!--<img src="{{modalShowcaseImage}}" />-->
                         </div>
                         <div class="divider-horizontal"></div>
                         <div class="modal-images-list">
@@ -134,8 +135,6 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/duScroll.js"></script>
-    <!--<script src="bower_components/slick-carousel/slick/slick.min.js"></script>
-    <script src="bower_components/slick-carousel/angular-slick/dist/slick.min.js"></script>-->
 </body>
 
 </html>

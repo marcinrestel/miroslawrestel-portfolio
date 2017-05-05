@@ -148,6 +148,7 @@ body.modal-open {
 .modal-content {
     background-color: #333;
     color: #ddd !important;
+    position: relative;
 }
 
 .modal-images-list {
@@ -180,7 +181,16 @@ body.modal-open {
     display: flex;
     justify-content: center;
     width: 100%;
+    max-width: 100%;
     height: auto;
+    & div {
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 0;
+        padding-top: 66.64%;
+        background-position:center;
+    }
 }
 
 .divider-horizontal {
