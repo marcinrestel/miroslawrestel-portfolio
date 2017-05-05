@@ -1,4 +1,4 @@
-$color: black;
+$color: #ddd;
 @mixin transition($args...) {
     -webkit-transition: $args;
     -moz-transition: $args;
@@ -8,11 +8,11 @@ $color: black;
 }
 
 nav {
-    opacity: 0.75;
+    opacity: 0.95;
 }
 
 body {
-    background-color: #888;
+    background-color: #444;
 }
 
 .cover {
@@ -62,9 +62,15 @@ body {
     }
 }
 
+.carousel {
+    border-bottom: 1px solid #ddd;
+}
+
 .about {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
     text-align: justify;
-    background-color: #666;
+    background-color: #333;
     color: #ddd;
     min-height: 400px;
     position: relative;
@@ -111,7 +117,6 @@ body {
 }
 
 .footer {
-    border-top: 1px solid #ddd;
     height: 50px;
     color: #ddd;
     display: flex;
@@ -141,8 +146,8 @@ body.modal-open {
 }
 
 .modal-content {
-    background-color: #666;
-    color: white !important;
+    background-color: #333;
+    color: #ddd !important;
 }
 
 .modal-images-list {

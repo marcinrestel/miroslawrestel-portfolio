@@ -1,11 +1,11 @@
 /* line 10, ../scss/index.scss */
 nav {
-  opacity: 0.75;
+  opacity: 0.95;
 }
 
 /* line 14, ../scss/index.scss */
 body {
-  background-color: #888;
+  background-color: #444;
 }
 
 /* line 18, ../scss/index.scss */
@@ -63,14 +63,21 @@ body {
 }
 
 /* line 65, ../scss/index.scss */
+.carousel {
+  border-bottom: 1px solid #ddd;
+}
+
+/* line 69, ../scss/index.scss */
 .about {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
   text-align: justify;
-  background-color: #666;
+  background-color: #333;
   color: #ddd;
   min-height: 400px;
   position: relative;
 }
-/* line 71, ../scss/index.scss */
+/* line 77, ../scss/index.scss */
 .about .about__contact {
   display: flex;
   flex-direction: column;
@@ -78,30 +85,30 @@ body {
   justify-content: center;
   flex-wrap: wrap;
 }
-/* line 77, ../scss/index.scss */
+/* line 83, ../scss/index.scss */
 .about .about__contact .contact__item {
   display: flex;
   align-items: center;
   text-align: left;
 }
-/* line 81, ../scss/index.scss */
+/* line 87, ../scss/index.scss */
 .about .about__contact .contact__item i {
   margin: 5px;
 }
-/* line 86, ../scss/index.scss */
+/* line 92, ../scss/index.scss */
 .about .about__text {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 400px;
 }
-/* line 91, ../scss/index.scss */
+/* line 97, ../scss/index.scss */
 .about .about__text .about__text__name {
   text-align: center;
   margin-bottom: 10px;
   font-size: 1.3em;
 }
-/* line 97, ../scss/index.scss */
+/* line 103, ../scss/index.scss */
 .about .about__image {
   height: 400px;
   border-radius: 50%;
@@ -109,7 +116,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-/* line 103, ../scss/index.scss */
+/* line 109, ../scss/index.scss */
 .about .about__image div {
   height: 250px;
   width: 250px;
@@ -118,9 +125,8 @@ body {
   background-position: center;
 }
 
-/* line 113, ../scss/index.scss */
+/* line 119, ../scss/index.scss */
 .footer {
-  border-top: 1px solid #ddd;
   height: 50px;
   color: #ddd;
   display: flex;
@@ -129,45 +135,45 @@ body {
   padding: 10px;
 }
 
-/* line 123, ../scss/index.scss */
+/* line 128, ../scss/index.scss */
 .navbar-brand {
   cursor: default;
 }
 
-/* line 127, ../scss/index.scss */
+/* line 132, ../scss/index.scss */
 .nav-item {
   cursor: pointer;
 }
-/* line 129, ../scss/index.scss */
+/* line 134, ../scss/index.scss */
 .nav-item.active {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #dddddd;
 }
 
-/* line 134, ../scss/index.scss */
+/* line 139, ../scss/index.scss */
 .modal-lg-custom {
   max-width: 80%;
 }
 
-/* line 138, ../scss/index.scss */
+/* line 143, ../scss/index.scss */
 body.modal-open {
   margin-right: 0 !important;
   padding-right: 17px !important;
 }
 
-/* line 143, ../scss/index.scss */
+/* line 148, ../scss/index.scss */
 .modal-content {
-  background-color: #666;
-  color: white !important;
+  background-color: #333;
+  color: #ddd !important;
 }
 
-/* line 148, ../scss/index.scss */
+/* line 153, ../scss/index.scss */
 .modal-images-list {
   width: 100%;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 }
-/* line 153, ../scss/index.scss */
+/* line 158, ../scss/index.scss */
 .modal-images-list .modal-image {
   margin: 3px 6px;
   width: 150px;
@@ -177,20 +183,20 @@ body.modal-open {
   cursor: pointer;
   transition: all 0.3s;
 }
-/* line 161, ../scss/index.scss */
+/* line 166, ../scss/index.scss */
 .modal-images-list .modal-image:not(.active):hover {
   margin: 0px 3px;
   width: 156px;
   height: 156px;
 }
-/* line 166, ../scss/index.scss */
+/* line 171, ../scss/index.scss */
 .modal-images-list .modal-image.active {
   margin: -2px 1px;
   width: 160px;
   height: 160px;
 }
 
-/* line 174, ../scss/index.scss */
+/* line 179, ../scss/index.scss */
 .modal-showcase-image {
   display: flex;
   justify-content: center;
@@ -198,7 +204,7 @@ body.modal-open {
   height: auto;
 }
 
-/* line 181, ../scss/index.scss */
+/* line 186, ../scss/index.scss */
 .divider-horizontal {
   width: 60%;
   margin: 10px 20%;
