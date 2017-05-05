@@ -178,7 +178,7 @@ body.modal-open {
   transition: all 0.3s;
 }
 /* line 161, ../scss/index.scss */
-.modal-images-list .modal-image:hover {
+.modal-images-list .modal-image:not(.active):hover {
   margin: 0px 3px;
   width: 156px;
   height: 156px;
