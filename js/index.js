@@ -1,6 +1,7 @@
 var app = angular.module("portfolio", ['duScroll']);
 
 app.controller("appCtrl", function ($scope, $window) {
+
     $scope.showPortfolioItem = function (event) {
         let clickedItemID = event.currentTarget.attributes['data-id'].value;
         angular.element(event.currentTarget).addClass('active');
@@ -17,9 +18,7 @@ app.controller("appCtrl", function ($scope, $window) {
         $('#portfolio-modal').on('shown.bs.modal', function () {
             angular.element(".js-modal-image.active").removeClass("active");
             angular.element(".js-modal-image").first().addClass('active');
-        })
-
-        $('#portfolio-modal').on('hidden.bs.modal', function (e) {
+        }).on('hidden.bs.modal', function (e) {
             angular.element(event.currentTarget).removeClass('active');
         });
     }

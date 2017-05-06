@@ -1,47 +1,31 @@
-/* line 10, ../scss/index.scss */
+/* line 13, ../scss/index.scss */
 nav {
   opacity: 0.95;
 }
 
-/* line 14, ../scss/index.scss */
+/* line 17, ../scss/index.scss */
 body {
-  background-color: #444;
+  background-color: #444444;
 }
 
-/* line 18, ../scss/index.scss */
-.cover {
+/* line 21, ../scss/index.scss */
+.screen-cover {
   object-fit: cover;
   width: 100vw;
   height: 100vh;
 }
 
-/* line 24, ../scss/index.scss */
-.portfolio-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-/* line 30, ../scss/index.scss */
+/* line 28, ../scss/index.scss */
 .portfolio-container .portfolio-item {
-  display: inline-block;
   padding: 0;
   height: 250px;
   background-color: #ddd;
   background-size: cover;
 }
-/* line 37, ../scss/index.scss */
+/* line 34, ../scss/index.scss */
 .portfolio-container .portfolio-text {
   background-color: #fff;
-  width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-  cursor: default;
   -webkit-transition: all 0.3s;
   -moz-transition: all 0.3s;
   -ms-transition: all 0.3s;
@@ -51,73 +35,59 @@ body {
   font-size: 1.1em;
   cursor: pointer;
 }
-/* line 52, ../scss/index.scss */
+/* line 42, ../scss/index.scss */
 .portfolio-container .portfolio-text:hover, .portfolio-container .portfolio-text.active {
   opacity: 0.8;
   font-size: 1em;
 }
 
-/* line 60, ../scss/index.scss */
+/* line 50, ../scss/index.scss */
 .carousel-caption--add-shadow-to-items * {
   text-shadow: 0px 0px 10px black;
 }
 
-/* line 65, ../scss/index.scss */
-.carousel {
-  border-bottom: 1px solid #ddd;
+/* line 55, ../scss/index.scss */
+.carousel--bordered-bottom {
+  border-bottom: 1px solid #dddddd;
 }
 
-/* line 69, ../scss/index.scss */
+/* line 59, ../scss/index.scss */
+.about--bordered-top {
+  border-top: 1px solid #dddddd;
+}
+
+/* line 63, ../scss/index.scss */
+.about--bordered-bottom {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 67, ../scss/index.scss */
 .about {
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  text-align: justify;
-  background-color: #333;
-  color: #ddd;
+  background-color: #333333;
+  color: #dddddd;
   min-height: 400px;
   position: relative;
 }
-/* line 77, ../scss/index.scss */
-.about .about__contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-/* line 83, ../scss/index.scss */
-.about .about__contact .contact__item {
-  display: flex;
-  align-items: center;
-  text-align: left;
-}
-/* line 87, ../scss/index.scss */
-.about .about__contact .contact__item i {
+/* line 74, ../scss/index.scss */
+.about .about__contact .about__contact__item i {
   margin: 5px;
 }
-/* line 92, ../scss/index.scss */
+/* line 79, ../scss/index.scss */
 .about .about__text {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   height: 400px;
 }
-/* line 97, ../scss/index.scss */
+/* line 81, ../scss/index.scss */
 .about .about__text .about__text__name {
-  text-align: center;
   margin-bottom: 10px;
   font-size: 1.3em;
 }
-/* line 103, ../scss/index.scss */
+/* line 86, ../scss/index.scss */
 .about .about__image {
   height: 400px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
-/* line 108, ../scss/index.scss */
-.about .about__image div {
-  border: 1px solid #ddd;
+/* line 88, ../scss/index.scss */
+.about .about__image * {
+  border: 1px solid #dddddd;
   height: 250px;
   width: 250px;
   background-size: cover;
@@ -125,56 +95,49 @@ body {
   background-position: center;
 }
 
-/* line 119, ../scss/index.scss */
+/* line 99, ../scss/index.scss */
 .footer {
-  height: 50px;
-  color: #ddd;
-  display: flex;
-  align-items: center;
-  justify-content: right;
+  color: #dddddd;
   padding: 10px;
 }
 
-/* line 128, ../scss/index.scss */
+/* line 104, ../scss/index.scss */
 .navbar-brand {
   cursor: default;
 }
 
-/* line 132, ../scss/index.scss */
+/* line 108, ../scss/index.scss */
 .nav-item {
   cursor: pointer;
 }
-/* line 134, ../scss/index.scss */
+/* line 110, ../scss/index.scss */
 .nav-item.active {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 139, ../scss/index.scss */
+/* line 115, ../scss/index.scss */
 .modal-lg-custom {
   max-width: 80%;
 }
 
-/* line 143, ../scss/index.scss */
+/* line 119, ../scss/index.scss */
 body.modal-open {
   margin-right: 0 !important;
   padding-right: 17px !important;
 }
 
-/* line 148, ../scss/index.scss */
+/* line 124, ../scss/index.scss */
 .modal-content {
-  background-color: #333;
-  color: #ddd !important;
+  background-color: #333333;
+  color: #dddddd !important;
   position: relative;
 }
 
-/* line 154, ../scss/index.scss */
+/* line 130, ../scss/index.scss */
 .modal-images-list {
   width: 100%;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
 }
-/* line 159, ../scss/index.scss */
+/* line 132, ../scss/index.scss */
 .modal-images-list .modal-image {
   margin: 3px 6px;
   width: 150px;
@@ -184,28 +147,26 @@ body.modal-open {
   cursor: pointer;
   transition: all 0.3s;
 }
-/* line 167, ../scss/index.scss */
+/* line 140, ../scss/index.scss */
 .modal-images-list .modal-image:not(.active):hover {
   margin: 0px 3px;
   width: 156px;
   height: 156px;
 }
-/* line 172, ../scss/index.scss */
+/* line 145, ../scss/index.scss */
 .modal-images-list .modal-image.active {
   margin: -2px 1px;
   width: 160px;
   height: 160px;
 }
 
-/* line 180, ../scss/index.scss */
+/* line 153, ../scss/index.scss */
 .modal-showcase-image {
-  display: flex;
-  justify-content: center;
   width: 100%;
   padding-top: 66.64%;
   position: relative;
 }
-/* line 186, ../scss/index.scss */
+/* line 157, ../scss/index.scss */
 .modal-showcase-image div {
   background-size: contain;
   background-repeat: no-repeat;
@@ -217,9 +178,13 @@ body.modal-open {
   background-position: center;
 }
 
-/* line 198, ../scss/index.scss */
+/* line 169, ../scss/index.scss */
 .divider-horizontal {
-  width: 60%;
   margin: 10px 20%;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+/* line 174, ../scss/index.scss */
+.divider-horizondal--middle-size {
+  width: 60%;
 }

@@ -1,4 +1,7 @@
-$color: #ddd;
+$text: #ddd;
+$border: #ddd;
+$background1: #333;
+$background2: #444;
 @mixin transition($args...) {
     -webkit-transition: $args;
     -moz-transition: $args;
@@ -12,23 +15,17 @@ nav {
 }
 
 body {
-    background-color: #444;
+    background-color: $background2;
 }
 
-.cover {
+.screen-cover {
     object-fit: cover;
     width: 100vw;
     height: 100vh;
 }
 
 .portfolio-container {
-    position: relative;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     & .portfolio-item {
-        display: inline-block; // width: 25%;
         padding: 0;
         height: 250px;
         background-color: #ddd;
@@ -36,14 +33,7 @@ body {
     }
     & .portfolio-text {
         background-color: #fff;
-        width: 100%;
         height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        text-align: center;
-        cursor: default;
         @include transition(all 0.3s);
         opacity: 0;
         font-size: 1.1em;
@@ -62,51 +52,41 @@ body {
     }
 }
 
-.carousel {
-    border-bottom: 1px solid #ddd;
+.carousel--bordered-bottom {
+    border-bottom: 1px solid $border;
+}
+
+.about--bordered-top {
+    border-top: 1px solid $border;
+}
+
+.about--bordered-bottom {
+    border-bottom: 1px solid $border;
 }
 
 .about {
-    border-top: 1px solid #ddd;
-    border-bottom: 1px solid #ddd;
-    text-align: justify;
-    background-color: #333;
-    color: #ddd;
+    background-color: $background1;
+    color: $text;
     min-height: 400px;
     position: relative;
     & .about__contact {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        & .contact__item {
-            display: flex;
-            align-items: center;
-            text-align: left;
+        & .about__contact__item {
             & i {
                 margin: 5px;
             }
         }
     }
     & .about__text {
-        display: flex;
-        align-items: center;
-        justify-content: center;
         height: 400px;
         & .about__text__name {
-            text-align: center;
             margin-bottom: 10px;
             font-size: 1.3em;
         }
     }
     & .about__image {
         height: 400px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        & div {
-            border: 1px solid #ddd;
+        & * {
+            border: 1px solid $border;
             height: 250px;
             width: 250px;
             background-size: cover;
@@ -117,11 +97,7 @@ body {
 }
 
 .footer {
-    height: 50px;
-    color: #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: right;
+    color: $text;
     padding: 10px;
 }
 
@@ -132,7 +108,7 @@ body {
 .nav-item {
     cursor: pointer;
     &.active {
-        border-bottom: 1px solid $color;
+        border-bottom: 1px solid $text;
     }
 }
 
@@ -146,16 +122,13 @@ body.modal-open {
 }
 
 .modal-content {
-    background-color: #333;
-    color: #ddd !important;
+    background-color: $background1;
+    color: $text !important;
     position: relative;
 }
 
 .modal-images-list {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
     & .modal-image {
         margin: 3px 6px;
         width: 150px;
@@ -178,8 +151,6 @@ body.modal-open {
 }
 
 .modal-showcase-image {
-    display: flex;
-    justify-content: center;
     width: 100%;
     padding-top: 66.64%;
     position: relative;
@@ -196,7 +167,10 @@ body.modal-open {
 }
 
 .divider-horizontal {
-    width: 60%;
     margin: 10px 20%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $border;
+}
+
+.divider-horizondal--middle-size{
+    width: 60%;
 }
