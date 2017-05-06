@@ -125,11 +125,12 @@ body.modal-open {
 
 /* line 122, ../scss/index.scss */
 .modal-images-list {
-  width: 100%;
+  overflow-y: hidden;
 }
 /* line 124, ../scss/index.scss */
 .modal-images-list .modal-image {
   margin: 3px 6px;
+  min-width: 150px;
   width: 150px;
   height: 150px;
   background-size: cover;
@@ -137,26 +138,26 @@ body.modal-open {
   cursor: pointer;
   transition: all 0.3s;
 }
-/* line 132, ../scss/index.scss */
+/* line 133, ../scss/index.scss */
 .modal-images-list .modal-image:not(.active):hover {
   margin: 0px 3px;
   width: 156px;
   height: 156px;
 }
-/* line 137, ../scss/index.scss */
+/* line 138, ../scss/index.scss */
 .modal-images-list .modal-image.active {
   margin: -2px 1px;
   width: 160px;
   height: 160px;
 }
 
-/* line 145, ../scss/index.scss */
+/* line 146, ../scss/index.scss */
 .modal-showcase-image {
   width: 100%;
   padding-top: 66.64%;
   position: relative;
 }
-/* line 149, ../scss/index.scss */
+/* line 150, ../scss/index.scss */
 .modal-showcase-image div {
   background-size: contain;
   background-repeat: no-repeat;
@@ -168,13 +169,13 @@ body.modal-open {
   background-position: center;
 }
 
-/* line 161, ../scss/index.scss */
+/* line 162, ../scss/index.scss */
 .divider-horizontal {
   margin: 10px 20%;
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 166, ../scss/index.scss */
+/* line 167, ../scss/index.scss */
 .divider-horizondal--middle-size {
   width: 60%;
 }

@@ -120,9 +120,10 @@ body.modal-open {
 }
 
 .modal-images-list {
-    width: 100%;
+    overflow-y: hidden;
     & .modal-image {
         margin: 3px 6px;
+        min-width: 150px;
         width: 150px;
         height: 150px;
         background-size: cover;
@@ -163,6 +164,6 @@ body.modal-open {
     border-bottom: 1px solid $border;
 }
 
-.divider-horizondal--middle-size{
+.divider-horizondal--middle-size {
     width: 60%;
 }

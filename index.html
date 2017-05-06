@@ -81,8 +81,10 @@
                             <div ng-style="{'background-image':'url(' + modalShowcaseImage + ')'}"></div>
                         </div>
                         <div class="divider-horizontal divider-horizondal--middle-size"></div>
-                        <div class="modal-images-list d-flex justify-content-center flex-wrap">
-                            <div class="modal-image js-modal-image" ng-style="{'background-image':'url({{image}})'}" data-image="{{image}}" ng-repeat="image in modalImages" ng-click="changeModalShowcaseImage($event)">
+                        <div class="d-flex justify-content-center">
+                            <div class="modal-images-list d-flex flex-nowrap">
+                                <div class="modal-image js-modal-image" ng-style="{'background-image':'url({{image}})'}" data-image="{{image}}" ng-repeat="image in modalImages" ng-click="changeModalShowcaseImage($event)">
+                                </div>
                             </div>
                         </div>
                         <div class="divider-horizontal divider-horizondal--middle-size"></div>
