@@ -62,9 +62,9 @@ app.controller("appCtrl", function ($scope, $window) {
     ]
 
     $scope.carouselItems = [
-        { name: "TABULA RASA", description: "Lorem ipsum dolor sit amed", src: "http://www.wallpapereast.com/static/images/spring-in-nature-wide-wallpaper-603794.jpg" },
-        { name: "POŻEGNANIE Z AFRYKĄ", description: "Lorem ipsum dolor sit amed", src: "http://webneel.com/daily/sites/default/files/images/daily/09-2014/2-nature-photography-pedraterrinha.jpg" },
-        { name: "BIBLIA GUTENBERGA", description: "Lorem ipsum dolor sit amed", src: "http://webneel.com/wallpaper/sites/default/files/images/04-2013/natural-scenery-wallpaper.preview.jpg" }
+        { name: "TABULA RASA", description: "Lorem ipsum dolor sit amed", src: "https://drive.google.com/uc?id=0B1IBSEQW965yNkpDQW1OV1FsWE0" },
+        { name: "POŻEGNANIE Z AFRYKĄ", description: "Lorem ipsum dolor sit amed", src: "https://drive.google.com/uc?id=0B1IBSEQW965ySFZ4UVhxdFBLMU0" },
+        { name: "BIBLIA GUTENBERGA", description: "Lorem ipsum dolor sit amed", src: "https://drive.google.com/uc?id=0B1IBSEQW965ybERvbkI3bk4zdk0" }
     ]
 });
 
