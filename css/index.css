@@ -15,14 +15,20 @@ body {
   height: 100vh;
 }
 
-/* line 28, ../scss/index.scss */
+/* line 27, ../scss/index.scss */
+.modal-lg-custom {
+  max-width: 1200px;
+  width: auto;
+}
+
+/* line 33, ../scss/index.scss */
 .portfolio-container .portfolio-item {
   padding: 0;
   height: 250px;
   background-color: #ddd;
   background-size: cover;
 }
-/* line 34, ../scss/index.scss */
+/* line 39, ../scss/index.scss */
 .portfolio-container .portfolio-text {
   background-color: #fff;
   height: 100%;
@@ -35,52 +41,52 @@ body {
   font-size: 1.1em;
   cursor: pointer;
 }
-/* line 42, ../scss/index.scss */
+/* line 47, ../scss/index.scss */
 .portfolio-container .portfolio-text:hover, .portfolio-container .portfolio-text.active {
   opacity: 0.8;
   font-size: 1em;
 }
 
-/* line 50, ../scss/index.scss */
+/* line 55, ../scss/index.scss */
 .carousel-caption--add-shadow-to-items * {
   text-shadow: 0px 0px 10px black;
 }
 
-/* line 55, ../scss/index.scss */
+/* line 60, ../scss/index.scss */
 .bordered-top {
   border-top: 1px solid #dddddd;
 }
 
-/* line 59, ../scss/index.scss */
+/* line 64, ../scss/index.scss */
 .bordered-bottom {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 63, ../scss/index.scss */
+/* line 68, ../scss/index.scss */
 .about {
   background-color: #333333;
   color: #dddddd;
   min-height: 400px;
   position: relative;
 }
-/* line 70, ../scss/index.scss */
+/* line 75, ../scss/index.scss */
 .about .about__contact .about__contact__item i {
   margin: 5px;
 }
-/* line 75, ../scss/index.scss */
+/* line 80, ../scss/index.scss */
 .about .about__text {
   height: 400px;
 }
-/* line 77, ../scss/index.scss */
+/* line 82, ../scss/index.scss */
 .about .about__text .about__text__name {
   margin-bottom: 10px;
   font-size: 1.3em;
 }
-/* line 82, ../scss/index.scss */
+/* line 87, ../scss/index.scss */
 .about .about__image {
   height: 400px;
 }
-/* line 84, ../scss/index.scss */
+/* line 89, ../scss/index.scss */
 .about .about__image * {
   border: 1px solid #dddddd;
   height: 250px;
@@ -90,50 +96,50 @@ body {
   background-position: center;
 }
 
-/* line 95, ../scss/index.scss */
+/* line 100, ../scss/index.scss */
 .footer {
   color: #dddddd;
   padding: 10px;
 }
 
-/* line 100, ../scss/index.scss */
+/* line 105, ../scss/index.scss */
 .navbar-brand {
   cursor: default;
 }
 
-/* line 104, ../scss/index.scss */
+/* line 109, ../scss/index.scss */
 .nav-item {
   cursor: pointer;
 }
-/* line 106, ../scss/index.scss */
+/* line 111, ../scss/index.scss */
 .nav-item.active {
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 111, ../scss/index.scss */
+/* line 116, ../scss/index.scss */
 body.modal-open {
   margin-right: 0 !important;
   padding-right: 17px !important;
 }
 
-/* line 116, ../scss/index.scss */
+/* line 121, ../scss/index.scss */
 .modal-content {
   background-color: #333333;
   color: #dddddd !important;
   position: relative;
 }
 
-/* line 122, ../scss/index.scss */
+/* line 127, ../scss/index.scss */
 .modal-header > .close {
   color: #dddddd;
 }
 
-/* line 126, ../scss/index.scss */
+/* line 131, ../scss/index.scss */
 .modal-images-list {
   overflow-y: hidden;
   width: 900px;
 }
-/* line 129, ../scss/index.scss */
+/* line 134, ../scss/index.scss */
 .modal-images-list .modal-image {
   margin: 3px 6px;
   min-width: 150px;
@@ -144,26 +150,26 @@ body.modal-open {
   cursor: pointer;
   transition: all 0.3s;
 }
-/* line 138, ../scss/index.scss */
+/* line 143, ../scss/index.scss */
 .modal-images-list .modal-image:not(.active):hover {
   margin: 0px 3px;
   width: 156px;
   height: 156px;
 }
-/* line 143, ../scss/index.scss */
+/* line 148, ../scss/index.scss */
 .modal-images-list .modal-image.active {
   margin: -2px 1px;
   width: 160px;
   height: 160px;
 }
 
-/* line 151, ../scss/index.scss */
+/* line 156, ../scss/index.scss */
 .modal-showcase-image {
   width: 100%;
   padding-top: 66.64%;
   position: relative;
 }
-/* line 155, ../scss/index.scss */
+/* line 160, ../scss/index.scss */
 .modal-showcase-image div {
   background-size: contain;
   background-repeat: no-repeat;
@@ -175,13 +181,13 @@ body.modal-open {
   background-position: center;
 }
 
-/* line 167, ../scss/index.scss */
+/* line 172, ../scss/index.scss */
 .divider-horizontal {
   margin: 10px 20%;
   border-bottom: 1px solid #dddddd;
 }
 
-/* line 172, ../scss/index.scss */
+/* line 177, ../scss/index.scss */
 .divider-horizondal--middle-size {
   width: 60%;
 }

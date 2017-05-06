@@ -24,6 +24,11 @@ body {
     height: 100vh;
 }
 
+.modal-lg-custom {
+    max-width: 1200px;
+    width: auto;
+}
+
 .portfolio-container {
     & .portfolio-item {
         padding: 0;
