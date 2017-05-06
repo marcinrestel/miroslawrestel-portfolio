@@ -1,4 +1,4 @@
-var app = angular.module("portfolio", ['duScroll']);
+var app = angular.module("portfolio", ['duScroll', 'ngScrollbars']);
 
 app.controller("appCtrl", function ($scope, $window) {
 
@@ -21,6 +21,17 @@ app.controller("appCtrl", function ($scope, $window) {
         }).on('hidden.bs.modal', function (e) {
             angular.element(event.currentTarget).removeClass('active');
         });
+    }
+
+    $scope.jsModalImagesScrollConfig = {
+        autoHideScrollbar: false,
+        theme: 'light-3',
+        advanced: {
+            updateOnContentResize: true
+        },
+        setHeight: 162,
+        scrollInertia: 0,
+        axis: 'y'
     }
 
     $scope.changeModalShowcaseImage = function (event) {

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="bower_components/tether/dist/css/tether.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css" type="text/css">
 </head>
 
 <body ng-app="portfolio" scrollspy ng-controller="appCtrl">
@@ -81,10 +82,11 @@
                             <div ng-style="{'background-image':'url(' + modalShowcaseImage + ')'}"></div>
                         </div>
                         <div class="divider-horizontal divider-horizondal--middle-size"></div>
-                        <div class="d-flex justify-content-center">
-                            <div class="modal-images-list d-flex flex-nowrap">
-                                <div class="modal-image js-modal-image" ng-style="{'background-image':'url({{image}})'}" data-image="{{image}}" ng-repeat="image in modalImages" ng-click="changeModalShowcaseImage($event)">
-                                </div>
+                        <div class="d-flex">
+                            <div class="modal-images-list text-center" ng-scrollbars ng-scrollbars-config="jsModalImagesScrollConfig">
+                                    <div class="modal-image js-modal-image" style="display: inline-block" ng-style="{'background-image':'url({{image}})'}" data-image="{{image}}"
+                                        ng-repeat="image in modalImages" ng-click="changeModalShowcaseImage($event)">
+                                    </div>
                             </div>
                         </div>
                         <div class="divider-horizontal divider-horizondal--middle-size"></div>
@@ -136,6 +138,8 @@
     <script src="bower_components/angular/angular.min.js"></script>
     <script src="js/index.js"></script>
     <script src="js/duScroll.js"></script>
+    <script src="bower_components/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="bower_components/ng-scrollbars/dist/scrollbars.min.js"></script>
 </body>
 
 </html>
