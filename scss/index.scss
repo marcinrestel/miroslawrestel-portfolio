@@ -52,15 +52,11 @@ body {
     }
 }
 
-.carousel--bordered-bottom {
-    border-bottom: 1px solid $border;
-}
-
-.about--bordered-top {
+.bordered-top {
     border-top: 1px solid $border;
 }
 
-.about--bordered-bottom {
+.bordered-bottom {
     border-bottom: 1px solid $border;
 }
 
@@ -110,10 +106,6 @@ body {
     &.active {
         border-bottom: 1px solid $text;
     }
-}
-
-.modal-lg-custom {
-    max-width: 80%;
 }
 
 body.modal-open {
