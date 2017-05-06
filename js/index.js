@@ -30,7 +30,7 @@ app.controller("appCtrl", function ($scope, $window) {
             updateOnContentResize: true
         },
         setHeight: 162,
-        scrollInertia: 0,
+        scrollInertia: 300,
         axis: 'y'
     }
 
