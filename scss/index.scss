@@ -119,6 +119,10 @@ body.modal-open {
     position: relative;
 }
 
+.modal-header>.close {
+    color: $text;
+}
+
 .modal-images-list {
     overflow-y: hidden;
     width: 900px;
