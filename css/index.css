@@ -25,7 +25,8 @@ body {
   padding: 0;
   height: 250px;
   background-color: #ddd;
-  background-size: cover; }
+  background-size: cover;
+  background-position: center; }
 
 .portfolio-container .portfolio-text {
   background-color: #fff;
