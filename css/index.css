@@ -17,6 +17,9 @@ body {
     width: 1600px;
     max-width: 100%; } }
 
+.container-fluid--no-padding {
+  padding: 0; }
+
 .portfolio-container .portfolio-item {
   padding: 0;
   height: 250px;
