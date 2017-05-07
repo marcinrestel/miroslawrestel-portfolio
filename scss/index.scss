@@ -36,7 +36,8 @@ body {
 }
 
 .container-fluid--no-padding {
-    padding: 0;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .portfolio-container {
