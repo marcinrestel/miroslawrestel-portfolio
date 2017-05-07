@@ -12,7 +12,10 @@ body {
 @media (min-width: 2000px) {
   .modal-lg-custom {
     max-width: 1200px;
-    width: auto; } }
+    width: auto; }
+  .container {
+    width: 1440px;
+    max-width: 100%; } }
 
 .portfolio-container .portfolio-item {
   padding: 0;
