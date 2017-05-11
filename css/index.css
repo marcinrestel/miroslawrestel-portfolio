@@ -124,8 +124,10 @@ body.modal-open {
     display: inline-block;
     width: 160px;
     height: 160px;
-    background-image: url("https://media.giphy.com/media/xUPGciElNYVE4PKc4o/giphy.gif");
-    background-position: center; }
+    background-image: url("https://drive.google.com/uc?id=0BxZhCmRG6LCwYm1hOWZLanJ1RTg");
+    background-position: center;
+    background-size: 110px 80px;
+    background-repeat: no-repeat; }
 
 .modal-showcase-image {
   width: 100%;
