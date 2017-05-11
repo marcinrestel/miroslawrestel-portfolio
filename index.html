@@ -84,9 +84,10 @@
                         <div class="divider-horizontal divider-horizondal--middle-size"></div>
                         <div class="d-flex">
                             <div class="modal-images-list text-center" ng-scrollbars ng-scrollbars-config="jsModalImagesScrollConfig">
-                                <div class="modal-image js-modal-image" style="display: inline-block" ng-style="{'background-image':'url({{image.LQ}})'}" data-image="{{image.LQ}}"
-                                    ng-repeat="image in modalImages" ng-click="changeModalShowcaseImage($event)">
-                                </div>
+                                <span class="modal-image-placeholder" ng-repeat="image in modalImages"> 
+                                    <div class="modal-image js-modal-image" ng-style="{'background-image':'url({{image.LQ}})'}" data-image="{{image.LQ}}" ng-click="changeModalShowcaseImage($event)">
+                                    </div>
+                                </span>
                             </div>
                         </div>
                         <div class="divider-horizontal divider-horizondal--middle-size"></div>

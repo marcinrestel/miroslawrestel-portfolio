@@ -153,6 +153,7 @@ body.modal-open {
         background-position: center;
         cursor: pointer;
         transition: all 0.3s;
+        display: inline-block;
         &:not(.active):hover {
             margin: 0px 3px;
             width: 156px;
@@ -163,6 +164,13 @@ body.modal-open {
             width: 160px;
             height: 160px;
         }
+    }
+    & .modal-image-placeholder {
+        display: inline-block;
+        width: 160px;
+        height: 160px;
+        background-image: url("https://media.giphy.com/media/xUPGciElNYVE4PKc4o/giphy.gif");
+        background-position: center;
     }
 }
 
