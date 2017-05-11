@@ -84,20 +84,20 @@
                         <div class="divider-horizontal divider-horizondal--middle-size"></div>
                         <div class="d-flex">
                             <div class="modal-images-list text-center" ng-scrollbars ng-scrollbars-config="jsModalImagesScrollConfig">
-                                <div class="modal-image js-modal-image" style="display: inline-block" ng-style="{'background-image':'url({{image}})'}" data-image="{{image}}"
+                                <div class="modal-image js-modal-image" style="display: inline-block" ng-style="{'background-image':'url({{image.LQ}})'}" data-image="{{image.LQ}}"
                                     ng-repeat="image in modalImages" ng-click="changeModalShowcaseImage($event)">
                                 </div>
                             </div>
                         </div>
                         <div class="divider-horizontal divider-horizondal--middle-size"></div>
-                        <p>
+                        <p style="white-space: pre-line;">
                             {{modalDescription}}
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="portfolio-container d-flex justify-content-center flex-wrap">
+        <div class="portfolio-container d-flex flex-wrap">
             <div class="portfolio-item col-xl-3 col-md-4 col-sm-6" ng-style="{'background-image':'url({{eachItem.portfolioItemImage}})'}" ng-repeat="eachItem in portfolioItems track by $index">
                 <div class="portfolio-text d-flex justify-content-center text-center flex-column" data-id="{{$index}}" ng-click="showPortfolioItem($event)">
                     <div>
