@@ -23,8 +23,8 @@ body {
 
 .portfolio-container .portfolio-item {
   padding: 0;
-  height: 381px;
-  max-width: 381px;
+  height: 380px;
+  max-width: 380px;
   border: 1px solid #333;
   background-color: #ddd;
   background-size: cover;
