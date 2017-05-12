@@ -88,8 +88,15 @@ body.modal-open {
   color: #ddd !important;
   position: relative; }
 
-.modal-header > .close {
-  color: #ddd; }
+.modal-body > .modal-title {
+  text-align: center; }
+
+.modal-body > .close {
+  color: #ddd;
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  float: none; }
 
 .modal-images-list {
   overflow-y: hidden;
