@@ -41,7 +41,7 @@ app.controller("appCtrl", function ($scope, $window) {
     }
 
     $scope.aboutImageSrc = "https://drive.google.com/uc?id=0B1IBSEQW965yeWNyeEliVmV4Z28";
-    $scope.aboutText = "Moja przygoda z grafiką rozpoczęła się na studiach, kiedy stworzyłem swoje pierwsze wizualizacje 3D.\
+    $scope.aboutText = "Moja przygoda z grafiką rozpoczęła się na studiach, kiedy stworzyłem pierwsze wizualizacje 3D.\
                         Swoje umiejętności doskonaliłem w polskich i niemieckich biurach architektonicznych. W ostatnim czasie pracowałem przy\
                         dwóch filmowych produkcjach fulldome zrealizowanych dla Planetarium Niebo Kopernika.";
 
