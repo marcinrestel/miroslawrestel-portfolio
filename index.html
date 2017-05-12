@@ -86,7 +86,7 @@
                             <div class="d-flex align-items-center col-lg-3 col-md-4 col-sm-12">
                                 <div class="modal-images-list text-center" ng-scrollbars ng-scrollbars-config="jsModalImagesScrollConfig">
                                     <span class="modal-image-placeholder" ng-repeat="image in modalImages"> 
-                                            <div class="modal-image js-modal-image" ng-style="{'background-image':'url({{image.LQ}})'}" data-image="{{image.LQ}}" ng-click="changeModalShowcaseImage($event)">
+                                            <div class="modal-image js-modal-image" ng-style="{'background-image':'url(' + image.LQ +')'}" data-image="{{image.LQ}}" ng-click="changeModalShowcaseImage($event)">
                                             </div>
                                         </span>
                                 </div>
