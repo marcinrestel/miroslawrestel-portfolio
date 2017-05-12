@@ -44,6 +44,8 @@ app.controller("appCtrl", function ($scope, $window) {
     $scope.aboutText = "Moja przygoda z grafiką rozpoczęła się na studiach, kiedy stworzyłem pierwsze wizualizacje 3D.\
                         Swoje umiejętności doskonaliłem w polskich i niemieckich biurach architektonicznych. W ostatnim czasie pracowałem przy\
                         dwóch filmowych produkcjach fulldome zrealizowanych dla Planetarium Niebo Kopernika.";
+    $scope.aboutLinkedin = "linkedin.com/in/miroslawrestel";
+    $scope.aboutMail = "miroslaw.restel@gmail.com"
 
     $scope.portfolioItems = [
         {
