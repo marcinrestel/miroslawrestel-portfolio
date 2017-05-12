@@ -170,6 +170,7 @@ body.modal-open {
 .modal-showcase-image {
     width: 100%;
     padding-top: 66.64%;
+    min-height: 300px;
     position: relative;
     & div {
         background-size: contain;
