@@ -45,8 +45,8 @@ body {
         padding: 0;
         height: 380px;
         max-width: 380px;
-        border:1px solid #333;
-        background-color: #ddd;
+        border:1px solid $background1;
+        // background-color: #ddd;
         background-size: cover;
         background-position: center;
     }
