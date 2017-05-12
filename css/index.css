@@ -9,14 +9,6 @@ body {
   width: 100vw;
   height: 100vh; }
 
-@media (min-width: 2000px) {
-  .modal-lg-custom {
-    max-width: 1200px;
-    width: auto; }
-  .container {
-    width: 1600px;
-    max-width: 100%; } }
-
 .container-fluid--no-padding {
   padding-left: 0 !important;
   padding-right: 0 !important; }
@@ -101,7 +93,8 @@ body.modal-open {
 
 .modal-images-list {
   overflow-y: hidden;
-  width: 100%; }
+  width: 100%;
+  height: 100%; }
   .modal-images-list .modal-image {
     margin: 3px 6px;
     min-width: 150px;
@@ -136,9 +129,10 @@ body.modal-open {
   .modal-showcase-image div {
     background-size: contain;
     background-repeat: no-repeat;
-    width: 100%;
+    width: 95%;
     position: absolute;
-    height: 100%;
+    height: 95%;
+    margin: 2.5%;
     top: 0;
     left: 0;
     background-position: center; }
@@ -149,3 +143,23 @@ body.modal-open {
 
 .divider-horizondal--middle-size {
   width: 60%; }
+
+@media (min-width: 768px) {
+  .modal-lg-custom {
+    max-width: 730px !important;
+    width: auto !important; }
+  .modal-images-list {
+    border-left: 1px solid #ddd; } }
+
+@media (min-width: 990px) {
+  .modal-lg-custom {
+    max-width: 900px !important;
+    width: auto !important; } }
+
+@media (min-width: 2000px) {
+  .modal-lg-custom {
+    max-width: 1300px !important;
+    width: auto !important; }
+  .container {
+    width: 1600px;
+    max-width: 100%; } }
