@@ -333,8 +333,7 @@ app.controller("appCtrl", function ($scope, $window) {
                 {LQ: "/img/12_NEW_YORK_NEW_YORK/7.jpg", HQ: ""},
                 {LQ: "/img/12_NEW_YORK_NEW_YORK/8.jpg", HQ: ""},
                 {LQ: "/img/12_NEW_YORK_NEW_YORK/9.jpg", HQ: ""},
-                {LQ: "/img/12_NEW_YORK_NEW_YORK/10.jpg", HQ: ""},
-                {LQ: "/img/12_NEW_YORK_NEW_YORK/11.jpg", HQ: ""}],
+                {LQ: "/img/12_NEW_YORK_NEW_YORK/10.jpg", HQ: ""}],
             description: "",
             descriptionEN: ""
         },
