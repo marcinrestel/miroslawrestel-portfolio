@@ -8,7 +8,6 @@ app.controller("appCtrl", function ($scope, $http) {
         $scope.aboutMail = reply.data.aboutMail;
         $scope.aboutLinkedin = reply.data.aboutLinkedin;
         $scope.aboutText = reply.data.aboutText;
-        console.log($scope.portfolioItems);
     }, function (err) {
         console.log(err);
     });
