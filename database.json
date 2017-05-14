@@ -107,8 +107,8 @@
         {
             "name": "NA SKRZYDŁACH MARZEŃ",
             "nameEN": "DREAM TO FLY",
-            "shortdescription": "CENTRUM NAUKI KOPERNIK",
-            "shortdescriptionEN": "COPERNICUS SCIENCE CENTRE",
+            "shortDescription": "CENTRUM NAUKI KOPERNIK",
+            "shortDescriptionEN": "COPERNICUS SCIENCE CENTRE",
             "portfolioItemImage": "/img/02_NA_SKRZYDLACH_MARZEN/810/1.jpg",
             "imagesList": [
                 {
@@ -170,8 +170,8 @@
         {
             "name": "NA PRZEDMIEŚCIACH",
             "nameEN": "THE 'BURBS",
-            "shortdescription": "PROJEKT ARCHITEKTURA",
-            "shortdescriptionEN": "",
+            "shortDescription": "PROJEKT ARCHITEKTURA",
+            "shortDescriptionEN": "",
             "portfolioItemImage": "/img/03_NA_PRZEDMIESCIACH/1.jpg",
             "imagesList": [
                 {
@@ -201,8 +201,8 @@
         {
             "name": "POŻEGNANIE Z AFRYKĄ",
             "nameEN": "OUT OF AFRICA",
-            "shortdescription": "PROJEKT ARCHITEKTURA",
-            "shortdescriptionEN": "",
+            "shortDescription": "PROJEKT ARCHITEKTURA",
+            "shortDescriptionEN": "",
             "portfolioItemImage": "/img/04_POZEGNANIE_Z_AFRYKA/1.jpg",
             "imagesList": [
                 {
@@ -224,8 +224,8 @@
         {
             "name": "HOME, SWEET HOME",
             "nameEN": "HOME, SWEET HOME",
-            "shortdescription": "CREATIVE PLANET",
-            "shortdescriptionEN": "CREATIVE PLANET",
+            "shortDescription": "CREATIVE PLANET",
+            "shortDescriptionEN": "CREATIVE PLANET",
             "portfolioItemImage": "/img/05_HOME_SWEET_HOME/01.jpg",
             "imagesList": [
                 {
@@ -283,8 +283,8 @@
         {
             "name": "ROBINSON CRUSOE",
             "nameEN": "ROBINSON CRUSOE",
-            "shortdescription": "CENTRUM NAUKI KOPERNIK",
-            "shortdescriptionEN": "COPERNICUS SCIENCE CENTRE",
+            "shortDescription": "CENTRUM NAUKI KOPERNIK",
+            "shortDescriptionEN": "COPERNICUS SCIENCE CENTRE",
             "portfolioItemImage": "/img/06_ROBINSON_CRUSOE/1.jpg",
             "imagesList": [
                 {
@@ -346,8 +346,8 @@
         {
             "name": "TABULA RASA",
             "nameEN": "TABULA RASA",
-            "shortdescription": "CREATIVE PLANET",
-            "shortdescriptionEN": "CREATIVE PLANET",
+            "shortDescription": "CREATIVE PLANET",
+            "shortDescriptionEN": "CREATIVE PLANET",
             "portfolioItemImage": "/img/07_TABULA_RASA/1.jpg",
             "imagesList": [
                 {
@@ -381,8 +381,8 @@
         {
             "name": "BIBLIA GUTENBERGA",
             "nameEN": "GUTENBERG BIBLE",
-            "shortdescription": "CENTRUM NAUKI KOPERNIK",
-            "shortdescriptionEN": "COPERNICUS SCIENCE CENTRE",
+            "shortDescription": "CENTRUM NAUKI KOPERNIK",
+            "shortDescriptionEN": "COPERNICUS SCIENCE CENTRE",
             "portfolioItemImage": "/img/08_BIBLIA_GUTENBERGA/1.jpg",
             "imagesList": [
                 {
@@ -432,8 +432,8 @@
         {
             "name": "ŻYCIE WEWNĘTRZNE",
             "nameEN": "INNER LIFE",
-            "shortdescription": "CADMAN",
-            "shortdescriptionEN": "CADMAN",
+            "shortDescription": "CADMAN",
+            "shortDescriptionEN": "CADMAN",
             "portfolioItemImage": "/img/09_ZYCIE_WEWNETRZNE/1.jpg",
             "imagesList": [
                 {
@@ -467,8 +467,8 @@
         {
             "name": "DOM WSCHODZĄCEGO SŁOŃCA",
             "nameEN": "HOUSE OF THE RISING SUN",
-            "shortdescription": "QUADRO",
-            "shortdescriptionEN": "QUADRO",
+            "shortDescription": "QUADRO",
+            "shortDescriptionEN": "QUADRO",
             "portfolioItemImage": "/img/10_DOM_WSCHODZACEGO_SLONCA/1.jpg",
             "imagesList": [
                 {
@@ -486,8 +486,8 @@
         {
             "name": "PUSTYNNA BURZA",
             "nameEN": "DESERT STORM",
-            "shortdescription": "CENTRUM NAUKI KOPERNIK",
-            "shortdescriptionEN": "COPERNICUS SCIENCE CENTRE",
+            "shortDescription": "CENTRUM NAUKI KOPERNIK",
+            "shortDescriptionEN": "COPERNICUS SCIENCE CENTRE",
             "portfolioItemImage": "/img/11_PUSTYNNA_BURZA/1.jpg",
             "imagesList": [
                 {
@@ -589,8 +589,8 @@
         {
             "name": "NEW YORK, NEW YORK",
             "nameEN": "NEW YORK, NEW YORK",
-            "shortdescription": "CENTRUM NAUKI KOPERNIK / P2 ARCHITEKTEN",
-            "shortdescriptionEN": "COPERNICUS SCIENCE CENTRE / P2 ARCHITEKTEN",
+            "shortDescription": "CENTRUM NAUKI KOPERNIK / P2 ARCHITEKTEN",
+            "shortDescriptionEN": "COPERNICUS SCIENCE CENTRE / P2 ARCHITEKTEN",
             "portfolioItemImage": "/img/12_NEW_YORK_NEW_YORK/1.jpg",
             "imagesList": [
                 {
@@ -640,8 +640,8 @@
         {
             "name": "MORSKIE OPOWIEŚCI",
             "nameEN": "SEA STORIES",
-            "shortdescription": "CENTRUM NAUKI KOPERNIK",
-            "shortdescriptionEN": "COPERNICUS SCIENCE CENTRE",
+            "shortDescription": "CENTRUM NAUKI KOPERNIK",
+            "shortDescriptionEN": "COPERNICUS SCIENCE CENTRE",
             "portfolioItemImage": "/img/13_MORSKIE_OPOWIESCI/1.jpg",
             "imagesList": [
                 {
@@ -735,8 +735,8 @@
         {
             "name": "GALILEO GALILEI",
             "nameEN": "GALILEO GALILEI",
-            "shortdescription": "CREATIVE PLANET",
-            "shortdescriptionEN": "CREATIVE PLANET",
+            "shortDescription": "CREATIVE PLANET",
+            "shortDescriptionEN": "CREATIVE PLANET",
             "portfolioItemImage": "/img/14_GALILEO_GALILEI/1.jpg",
             "imagesList": [
                 {
@@ -782,8 +782,8 @@
         {
             "name": "KUCHENNE REWOLUCJE",
             "nameEN": "KITCHEN REVOLUTIONS",
-            "shortdescription": "CODASTUDIO",
-            "shortdescriptionEN": "CODASTUDIO",
+            "shortDescription": "CODASTUDIO",
+            "shortDescriptionEN": "CODASTUDIO",
             "portfolioItemImage": "/img/15_KUCHENNE_REWOLUCJE/1.jpg",
             "imagesList": [
                 {
@@ -801,8 +801,8 @@
         {
             "name": "POKÓJ Z WIDOKIEM",
             "nameEN": "A ROOM WITH A VIEW",
-            "shortdescription": "PRACA WŁASNA",
-            "shortdescriptionEN": "OWN WORK",
+            "shortDescription": "PRACA WŁASNA",
+            "shortDescriptionEN": "OWN WORK",
             "portfolioItemImage": "/img/16_POKOJ_Z_WIDOKIEM/1.jpg",
             "imagesList": [
                 {
@@ -820,8 +820,8 @@
         {
             "name": "BONNER STRASSE",
             "nameEN": "BONNER STRASSE",
-            "shortdescription": "P2 ARCHITEKTEN",
-            "shortdescriptionEN": "P2 ARCHITEKTEN",
+            "shortDescription": "P2 ARCHITEKTEN",
+            "shortDescriptionEN": "P2 ARCHITEKTEN",
             "portfolioItemImage": "/img/17_BONNER_STRASSE/1.jpg",
             "imagesList": [
                 {
@@ -847,8 +847,8 @@
         {
             "name": "PRĘDKOŚĆ DŹWIĘKU",
             "nameEN": "SOUND SPEED",
-            "shortdescription": "INARKO",
-            "shortdescriptionEN": "INARKO",
+            "shortDescription": "INARKO",
+            "shortDescriptionEN": "INARKO",
             "portfolioItemImage": "/img/18_PREDKOSC_DZWIEKU/1.jpg",
             "imagesList": [
                 {
@@ -866,8 +866,8 @@
         {
             "name": "TAJEMNICZY OGRÓD",
             "nameEN": "THE SECRET GARDEN",
-            "shortdescription": "PRACA WŁASNA",
-            "shortdescriptionEN": "OWN WORK",
+            "shortDescription": "PRACA WŁASNA",
+            "shortDescriptionEN": "OWN WORK",
             "portfolioItemImage": "/img/19_TAJEMNICZY_OGROD/1.jpg",
             "imagesList": [
                 {
@@ -881,8 +881,8 @@
         {
             "name": "DZIENNIKI MOTOCYKLOWE",
             "nameEN": "MOTORCYCLE DIARIES",
-            "shortdescription": "PRACA WŁASNA",
-            "shortdescriptionEN": "OWN WORK",
+            "shortDescription": "PRACA WŁASNA",
+            "shortDescriptionEN": "OWN WORK",
             "portfolioItemImage": "/img/20_DZIENNIKI_MOTOCYKLOWE/1.jpg",
             "imagesList": [
                 {
