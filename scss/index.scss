@@ -154,15 +154,20 @@ body.modal-open {
         cursor: pointer;
         transition: all 0.3s;
         display: inline-block;
+        border: 2px solid $border;
+        border-radius: 15%;
         &:not(.active):hover {
-            margin: 0px 3px;
-            width: 156px;
-            height: 156px;
+            border-radius: 25%;
+            // margin: 0px 3px;
+            // width: 156px;
+            // height: 156px;
         }
         &.active {
-            margin: -2px 1px;
-            width: 160px;
-            height: 160px;
+            border: 2px solid $background1;
+            border-radius: 25%;
+            // margin: -2px 1px;
+            // width: 160px;
+            // height: 160px;
         }
     }
     & .modal-image-placeholder {
@@ -210,8 +215,9 @@ body.modal-open {
     }
     .modal-images-list {
         border-left: 1px solid $border;
+        padding-left:2px;
         height: 560px;
-        max-width: 180px;
+        max-width: 190px;
     }
 }
 

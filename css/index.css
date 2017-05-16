@@ -112,15 +112,14 @@ body.modal-open {
     background-position: center;
     cursor: pointer;
     transition: all 0.3s;
-    display: inline-block; }
+    display: inline-block;
+    border: 2px solid #ddd;
+    border-radius: 15%; }
     .modal-images-list .modal-image:not(.active):hover {
-      margin: 0px 3px;
-      width: 156px;
-      height: 156px; }
+      border-radius: 25%; }
     .modal-images-list .modal-image.active {
-      margin: -2px 1px;
-      width: 160px;
-      height: 160px; }
+      border: 2px solid #333;
+      border-radius: 25%; }
   .modal-images-list .modal-image-placeholder {
     display: inline-block;
     width: 160px;
@@ -159,8 +158,9 @@ body.modal-open {
     width: auto !important; }
   .modal-images-list {
     border-left: 1px solid #ddd;
+    padding-left: 2px;
     height: 560px;
-    max-width: 180px; } }
+    max-width: 190px; } }
 
 @media (min-width: 990px) {
   .modal-lg-custom {

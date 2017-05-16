@@ -9,7 +9,7 @@ app.controller("appCtrl", function ($scope, $http) {
         $scope.aboutLinkedin = reply.data.aboutLinkedin;
         $scope.aboutText = reply.data.aboutText;
     }, function (err) {
-        console.log(err);
+        // console.log(err);
     });
 
     $scope.jsModalImagesScrollConfig = {
@@ -18,7 +18,6 @@ app.controller("appCtrl", function ($scope, $http) {
         advanced: {
             updateOnContentResize: true
         },
-        // setHeight: false,
         scrollInertia: 300,
         axis: 'y'
     }
