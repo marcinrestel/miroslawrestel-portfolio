@@ -5,12 +5,12 @@
     "aboutMail": "miroslaw.restel@gmail.com",
     "carouselItems": [
         {
-            "name": "DOM WSCHODZĄDZEGO SŁOŃCA",
+            "name": "TABULA RASA",
             "description": "",
             "src": "/img/slajdy/1.jpg"
         },
         {
-            "name": "NA PRZEDMIEŚCIACH",
+            "name": "BIBLIA GUTENBERGA",
             "description": "",
             "src": "/img/slajdy/2.jpg"
         },
@@ -352,19 +352,19 @@
             "imagesList": [
                 {
                     "LQ": "/img/07_TABULA_RASA/1.jpg",
-                    "HQ": ""
+                    "HQ": "/img/07_TABULA_RASA/duze/1.jpg"
                 },
                 {
                     "LQ": "/img/07_TABULA_RASA/2.jpg",
-                    "HQ": ""
+                    "HQ": "/img/07_TABULA_RASA/duze/2.jpg"
                 },
                 {
                     "LQ": "/img/07_TABULA_RASA/3.jpg",
-                    "HQ": ""
+                    "HQ": "/img/07_TABULA_RASA/duze/3.jpg"
                 },
                 {
                     "LQ": "/img/07_TABULA_RASA/4.jpg",
-                    "HQ": ""
+                    "HQ": "/img/07_TABULA_RASA/duze/4.jpg"
                 },
                 {
                     "LQ": "/img/07_TABULA_RASA/5.jpg",
@@ -372,6 +372,22 @@
                 },
                 {
                     "LQ": "/img/07_TABULA_RASA/6.jpg",
+                    "HQ": ""
+                },
+                {
+                    "LQ": "/img/07_TABULA_RASA/7.jpg",
+                    "HQ": ""
+                },
+                {
+                    "LQ": "/img/07_TABULA_RASA/8.jpg",
+                    "HQ": ""
+                },
+                {
+                    "LQ": "/img/07_TABULA_RASA/9.jpg",
+                    "HQ": ""
+                },
+                {
+                    "LQ": "/img/07_TABULA_RASA/10.jpg",
                     "HQ": ""
                 }
             ],
