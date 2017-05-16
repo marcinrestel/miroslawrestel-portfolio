@@ -101,7 +101,8 @@ body.modal-open {
 .modal-images-list {
   overflow-y: hidden;
   width: 100%;
-  height: 100%; }
+  height: 180px;
+  margin: 0 auto; }
   .modal-images-list .modal-image {
     margin: 3px 6px;
     min-width: 150px;
@@ -157,17 +158,18 @@ body.modal-open {
     max-width: 730px !important;
     width: auto !important; }
   .modal-images-list {
-    border-left: 1px solid #ddd; } }
+    border-left: 1px solid #ddd;
+    height: 560px;
+    max-width: 180px; } }
 
 @media (min-width: 990px) {
   .modal-lg-custom {
     max-width: 900px !important;
     width: auto !important; } }
 
-@media (min-width: 2000px) {
+@media (min-width: 2150px) {
   .modal-lg-custom {
-    max-width: 1300px !important;
+    max-width: 1500px !important;
     width: auto !important; }
-  .container {
-    width: 1600px;
-    max-width: 100%; } }
+  .modal-images-list {
+    height: 810px; } }

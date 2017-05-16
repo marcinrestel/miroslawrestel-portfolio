@@ -18,7 +18,7 @@ app.controller("appCtrl", function ($scope, $http) {
         advanced: {
             updateOnContentResize: true
         },
-        setHeight: 500,
+        // setHeight: false,
         scrollInertia: 300,
         axis: 'y'
     }
