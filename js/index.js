@@ -30,6 +30,8 @@ app.controller("appCtrl", function ($scope, $http) {
         $scope.modalDescription = $scope.portfolioItems[clickedItemID].description;
         $scope.modalImages = $scope.portfolioItems[clickedItemID].imagesList;
         $scope.modalShowcaseImage = $scope.modalImages[0].LQ;
+        $scope.prevModalShowcaseImageID = 0;
+        $scope.nextModalShowcaseImageID = 1;
 
         angular.element('#portfolio-modal').modal('show', {
             keyboard: true
@@ -44,9 +46,20 @@ app.controller("appCtrl", function ($scope, $http) {
     }
 
     $scope.changeModalShowcaseImage = function (event) {
-        $scope.modalShowcaseImage = event.currentTarget.attributes['data-image'].value;
+        $scope.modalShowcaseImage = $scope.modalImages[event.currentTarget.attributes['data-id'].value].LQ;
         angular.element(".js-modal-image.active").removeClass("active");
-        angular.element(event.target).addClass('active');
+        angular.element(".js-modal-image[data-id = " + event.currentTarget.attributes['data-id'].value + "]").addClass("active");
+        setModalShowcaseImagePrevAndNext(event.currentTarget.attributes['data-id'].value);
+    }
+
+    function setModalShowcaseImagePrevAndNext(currentID){
+        let current = parseInt(currentID);
+        let prev = current - 1;
+        let next = current + 1;
+        let max =  $scope.modalImages.length - 1;
+
+        $scope.prevModalShowcaseImageID = prev < 0 ? 0 : prev;
+        $scope.nextModalShowcaseImageID = next >= max ? max : next;
     }
 });
 
