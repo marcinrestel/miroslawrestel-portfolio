@@ -30,8 +30,7 @@ app.controller("appCtrl", function ($scope, $http) {
         $scope.modalDescription = $scope.portfolioItems[clickedItemID].description;
         $scope.modalImages = $scope.portfolioItems[clickedItemID].imagesList;
         $scope.modalShowcaseImage = $scope.modalImages[0].LQ;
-        $scope.prevModalShowcaseImageID = 0;
-        $scope.nextModalShowcaseImageID = 1;
+        setModalShowcaseImagePrevAndNext(0);
 
         angular.element('#portfolio-modal').modal('show', {
             keyboard: true
