@@ -1,4 +1,4 @@
-var app = angular.module("portfolio", ['duScroll', 'ngScrollbars']);
+var app = angular.module("portfolio", ['duScroll', 'ngScrollbars', 'ngAnimate']);
 
 app.controller("appCtrl", function ($scope, $http) {
     $http.get('database.json').then(function (reply) {

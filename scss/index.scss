@@ -212,6 +212,13 @@ body.modal-open {
     width: 60%;
 }
 
+.sample-show-hide {
+  transition: all linear 0.5s;
+}
+.sample-show-hide.ng-hide {
+  opacity: 0;
+}
+
 @media(min-width: 768px) {
     .modal-lg-custom {
         max-width: 730px !important;
