@@ -71,22 +71,18 @@ app.controller("appCtrl", function ($scope, $http) {
         
         function onloadFunction() {
             counter++;
-            console.log(counter, portfolioItemsLength)
             if(counter === portfolioItemsLength){
-                console.log("loaded")
-                $scope.imagesLoaded = true;
+                // $scope.imagesLoaded = true;
                 $scope.$apply();
             }
         }
         for (i = 0; i < carouselItemsLength; i++) {
             c[i]=new Image();
-            console.log($scope.carouselItems[i].src);
             c[i].onload = onloadFunction;
             c[i].src = $scope.carouselItems[i].src;
         }
         for (i; i < portfolioItemsLength; i++) {
             c[i]=new Image();
-            console.log($scope.portfolioItems[i-carouselItemsLength].portfolioItemImage);
             c[i].onload = onloadFunction;
             c[i].src = $scope.portfolioItems[i-carouselItemsLength].portfolioItemImage;
         }

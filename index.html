@@ -13,7 +13,10 @@
 </head>
 
 <body ng-app="portfolio" scrollspy ng-controller="appCtrl">
-    <div ng-show="imagesLoaded">
+    <div ng-show="!imagesLoaded">
+        Loading...
+    </div>
+    <div ng-show="imagesLoaded" ng-cloak>
         <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -146,9 +149,6 @@
         <div class="footer d-flex flex-row-reverse align-items-center">
             2017 | Marcin Restel
         </div>
-    </div>
-    <div ng-show="!imagesLoaded">
-        Loading...
     </div>
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/tether/dist/js/tether.min.js"></script>

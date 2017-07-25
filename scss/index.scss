@@ -18,6 +18,10 @@ body {
     background-color: $background2;
 }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
 .screen-cover {
     object-fit: cover;
     width: 100vw;
