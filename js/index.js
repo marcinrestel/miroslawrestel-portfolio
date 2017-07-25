@@ -8,6 +8,7 @@ app.controller("appCtrl", function ($scope, $http) {
         $scope.aboutMail = reply.data.aboutMail;
         $scope.aboutLinkedin = reply.data.aboutLinkedin;
         $scope.aboutText = reply.data.aboutText;
+        preloadImages();
     }, function (err) {
         // console.log(err);
     });
@@ -51,14 +52,28 @@ app.controller("appCtrl", function ($scope, $http) {
         setModalShowcaseImagePrevAndNext(event.currentTarget.attributes['data-id'].value);
     }
 
-    function setModalShowcaseImagePrevAndNext(currentID){
+    function setModalShowcaseImagePrevAndNext(currentID) {
         let current = parseInt(currentID);
         let prev = current - 1;
         let next = current + 1;
-        let max =  $scope.modalImages.length - 1;
+        let max = $scope.modalImages.length - 1;
 
         $scope.prevModalShowcaseImageID = prev < 0 ? 0 : prev;
         $scope.nextModalShowcaseImageID = next >= max ? max : next;
+    }
+
+    function preloadImages() {
+        var length = $scope.carouselItems.length;
+        var loaded = 0;
+        console.log(length);
+        var c = new Image();
+        for(var i = 0; i<length; i++){
+            console.log($scope.carouselItems[i].src);
+            c.onload=function(){
+                console.log("loaded")
+            }
+            c.src = $scope.carouselItems[i].src;
+        }
     }
 });
 
