@@ -63,20 +63,32 @@ app.controller("appCtrl", function ($scope, $http) {
     }
 
     function preloadImages() {
-        var c = new Image();
-
-        c.onload = function () {
-            console.log("loaded")
+        var c = []
+        var counter = 0;
+        var carouselItemsLength = $scope.carouselItems.length;
+        var portfolioItemsLength = $scope.portfolioItems.length + carouselItemsLength;
+        var i = 0;
+        
+        function onloadFunction() {
+            counter++;
+            console.log(counter, portfolioItemsLength)
+            if(counter === portfolioItemsLength){
+                console.log("loaded")
+                $scope.imagesLoaded = true;
+                $scope.$apply();
+            }
         }
-
-        for (var i = 0, carouselItemsLength = $scope.carouselItems.length; i < carouselItemsLength; i++) {
+        for (i = 0; i < carouselItemsLength; i++) {
+            c[i]=new Image();
             console.log($scope.carouselItems[i].src);
-            c.src = $scope.carouselItems[i].src;
+            c[i].onload = onloadFunction;
+            c[i].src = $scope.carouselItems[i].src;
         }
-
-        for (var i = 0, portfolioItemsLength = $scope.portfolioItems.length; i < portfolioItemsLength; i++) {
-            console.log($scope.portfolioItems[i].portfolioItemImage);
-            c.src = $scope.portfolioItems[i].portfolioItemImage;
+        for (i; i < portfolioItemsLength; i++) {
+            c[i]=new Image();
+            console.log($scope.portfolioItems[i-carouselItemsLength].portfolioItemImage);
+            c[i].onload = onloadFunction;
+            c[i].src = $scope.portfolioItems[i-carouselItemsLength].portfolioItemImage;
         }
 
     }
