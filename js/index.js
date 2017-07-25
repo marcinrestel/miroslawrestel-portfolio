@@ -63,17 +63,22 @@ app.controller("appCtrl", function ($scope, $http) {
     }
 
     function preloadImages() {
-        var length = $scope.carouselItems.length;
-        var loaded = 0;
-        console.log(length);
         var c = new Image();
-        for(var i = 0; i<length; i++){
+
+        c.onload = function () {
+            console.log("loaded")
+        }
+
+        for (var i = 0, carouselItemsLength = $scope.carouselItems.length; i < carouselItemsLength; i++) {
             console.log($scope.carouselItems[i].src);
-            c.onload=function(){
-                console.log("loaded")
-            }
             c.src = $scope.carouselItems[i].src;
         }
+
+        for (var i = 0, portfolioItemsLength = $scope.portfolioItems.length; i < portfolioItemsLength; i++) {
+            console.log($scope.portfolioItems[i].portfolioItemImage);
+            c.src = $scope.portfolioItems[i].portfolioItemImage;
+        }
+
     }
 });
 
