@@ -72,7 +72,7 @@ app.controller("appCtrl", function ($scope, $http) {
         function onloadFunction() {
             counter++;
             if(counter === portfolioItemsLength){
-                // $scope.imagesLoaded = true;
+                $scope.imagesLoaded = true;
                 $scope.$apply();
             }
         }
