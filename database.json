@@ -830,33 +830,6 @@
             "descriptionEN": ""
         },
         {
-            "name": "BONNER STRASSE",
-            "nameEN": "BONNER STRASSE",
-            "shortDescription": "P2 ARCHITEKTEN",
-            "shortDescriptionEN": "P2 ARCHITEKTEN",
-            "portfolioItemImage": "/img/17_BONNER_STRASSE/1.jpg",
-            "imagesList": [
-                {
-                    "LQ": "/img/17_BONNER_STRASSE/1.jpg",
-                    "HQ": "/img/17_BONNER_STRASSE/2k/1.jpg"
-                },
-                {
-                    "LQ": "/img/17_BONNER_STRASSE/2.jpg",
-                    "HQ": "/img/17_BONNER_STRASSE/2k/2.jpg"
-                },
-                {
-                    "LQ": "/img/17_BONNER_STRASSE/3.jpg",
-                    "HQ": "/img/17_BONNER_STRASSE/2k/3.jpg"
-                },
-                {
-                    "LQ": "/img/17_BONNER_STRASSE/4.jpg",
-                    "HQ": "/img/17_BONNER_STRASSE/2k/4.jpg"
-                }
-            ],
-            "description": "",
-            "descriptionEN": ""
-        },
-        {
             "name": "PRĘDKOŚĆ DŹWIĘKU",
             "nameEN": "SOUND SPEED",
             "shortDescription": "INARKO",
