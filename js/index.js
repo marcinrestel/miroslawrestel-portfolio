@@ -1,25 +1,9 @@
 (function () {
+    "use strict";
+
     angular
         .module("portfolio", ['duScroll', 'ngScrollbars', 'ngAnimate'])
-        .controller("appCtrl", appCtrl);
-
-    function appCtrl($scope, $http) {
-
-        var vm = this;
-
-        $http.get('database.json').then(function (response) {
-            vm.aboutImageSrc = response.data.aboutImageSrc;
-            vm.portfolioItems = response.data.portfolioItems;
-            vm.carouselItems = response.data.carouselItems;
-            vm.aboutMail = response.data.aboutMail;
-            vm.aboutLinkedin = response.data.aboutLinkedin;
-            vm.aboutText = response.data.aboutText;
-            preloadImages();
-        }, function (err) {
-            // console.log(err);
-        });
-
-        vm.jsModalImagesScrollConfig = {
+        .constant('MODAL_SCROLL_CONFIG', {
             autoHideScrollbar: false,
             theme: 'light-3',
             advanced: {
@@ -27,9 +11,77 @@
             },
             scrollInertia: 300,
             axis: 'y'
+        })
+        .controller("appCtrl", appCtrl);
+
+    function appCtrl($scope, $http, MODAL_SCROLL_CONFIG) {
+        var vm = this;
+        vm.changeModalShowcaseImage = changeModalShowcaseImage;
+        vm.jsModalImagesScrollConfig = MODAL_SCROLL_CONFIG;
+        vm.showPortfolioItem = showPortfolioItem;
+
+        init();
+
+        function changeModalShowcaseImage(event) {
+            vm.modalShowcaseImage = vm.modalImages[event.currentTarget.attributes['data-id'].value].LQ;
+            angular.element(".js-modal-image.active").removeClass("active");
+            angular.element(".js-modal-image[data-id = " + event.currentTarget.attributes['data-id'].value + "]").addClass("active");
+            setModalShowcaseImagePrevAndNext(event.currentTarget.attributes['data-id'].value);
         }
 
-        vm.showPortfolioItem = function (event) {
+        function init() {
+            $http.get('database.json').then(function (response) {
+                vm.aboutImageSrc = response.data.aboutImageSrc;
+                vm.portfolioItems = response.data.portfolioItems;
+                vm.carouselItems = response.data.carouselItems;
+                vm.aboutMail = response.data.aboutMail;
+                vm.aboutLinkedin = response.data.aboutLinkedin;
+                vm.aboutText = response.data.aboutText;
+                preloadImages();
+            }, function (err) {
+                // console.log(err);
+            });
+        }
+
+        function preloadImages() {
+            var c = []
+            var counter = 0;
+            var carouselItemsLength = vm.carouselItems.length;
+            var portfolioItemsLength = vm.portfolioItems.length + carouselItemsLength;
+            var i = 0;
+
+            function onloadFunction() {
+                counter++;
+                if (counter === portfolioItemsLength) {
+                    vm.imagesLoaded = true;
+                    $scope.$apply();
+                }
+            }
+
+            for (i = 0; i < carouselItemsLength; i++) {
+                c[i] = new Image();
+                c[i].onload = onloadFunction;
+                c[i].src = vm.carouselItems[i].src;
+            }
+            for (i; i < portfolioItemsLength; i++) {
+                c[i] = new Image();
+                c[i].onload = onloadFunction;
+                c[i].src = vm.portfolioItems[i - carouselItemsLength].portfolioItemImage;
+            }
+
+        }
+
+        function setModalShowcaseImagePrevAndNext(currentID) {
+            let current = parseInt(currentID);
+            let prev = current - 1;
+            let next = current + 1;
+            let max = vm.modalImages.length - 1;
+
+            vm.prevModalShowcaseImageID = prev < 0 ? 0 : prev;
+            vm.nextModalShowcaseImageID = next >= max ? max : next;
+        }
+
+        function showPortfolioItem(event) {
             let clickedItemID = event.currentTarget.attributes['data-id'].value;
             angular.element(event.currentTarget).addClass('active');
 
@@ -49,50 +101,6 @@
             }).on('hidden.bs.modal', function (e) {
                 angular.element(event.currentTarget).removeClass('active');
             });
-        }
-
-        vm.changeModalShowcaseImage = function (event) {
-            vm.modalShowcaseImage = vm.modalImages[event.currentTarget.attributes['data-id'].value].LQ;
-            angular.element(".js-modal-image.active").removeClass("active");
-            angular.element(".js-modal-image[data-id = " + event.currentTarget.attributes['data-id'].value + "]").addClass("active");
-            setModalShowcaseImagePrevAndNext(event.currentTarget.attributes['data-id'].value);
-        }
-
-        function setModalShowcaseImagePrevAndNext(currentID) {
-            let current = parseInt(currentID);
-            let prev = current - 1;
-            let next = current + 1;
-            let max = vm.modalImages.length - 1;
-
-            vm.prevModalShowcaseImageID = prev < 0 ? 0 : prev;
-            vm.nextModalShowcaseImageID = next >= max ? max : next;
-        }
-
-        function preloadImages() {
-            var c = []
-            var counter = 0;
-            var carouselItemsLength = vm.carouselItems.length;
-            var portfolioItemsLength = vm.portfolioItems.length + carouselItemsLength;
-            var i = 0;
-
-            function onloadFunction() {
-                counter++;
-                if (counter === portfolioItemsLength) {
-                    vm.imagesLoaded = true;
-                    $scope.$apply();
-                }
-            }
-            for (i = 0; i < carouselItemsLength; i++) {
-                c[i] = new Image();
-                c[i].onload = onloadFunction;
-                c[i].src = vm.carouselItems[i].src;
-            }
-            for (i; i < portfolioItemsLength; i++) {
-                c[i] = new Image();
-                c[i].onload = onloadFunction;
-                c[i].src = vm.portfolioItems[i - carouselItemsLength].portfolioItemImage;
-            }
-
         }
     }
 })();
