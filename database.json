@@ -489,6 +489,45 @@
             "descriptionEN": ""
         },
         {
+            "name": "KOD DA VINCI",
+            "nameEN": "",
+            "shortDescription": "",
+            "shortDescriptionEN": "",
+            "portfolioItemImage": "/img/08a_KOD_DA_VINCI/1210/1.jpg",
+            "imagesList": [
+                {
+                    "LQ": "/img/08a_KOD_DA_VINCI/1210/1.jpg",
+                    "HQ": "/img/08a_KOD_DA_VINCI/1.jpg"
+                },
+                {
+                    "LQ": "/img/08a_KOD_DA_VINCI/1210/2.jpg",
+                    "HQ": "/img/08a_KOD_DA_VINCI/2.jpg"
+                },
+                {
+                    "LQ": "/img/08a_KOD_DA_VINCI/1210/3.jpg",
+                    "HQ": "/img/08a_KOD_DA_VINCI/3.jpg"
+                },
+                {
+                    "LQ": "/img/08a_KOD_DA_VINCI/1210/4.jpg",
+                    "HQ": "/img/08a_KOD_DA_VINCI/4.jpg"
+                },
+                {
+                    "LQ": "/img/08a_KOD_DA_VINCI/1210/5.jpg",
+                    "HQ": "/img/08a_KOD_DA_VINCI/5.jpg"
+                },
+                {
+                    "LQ": "/img/08a_KOD_DA_VINCI/1210/6.jpg",
+                    "HQ": "/img/08a_KOD_DA_VINCI/6.jpg"
+                },
+                {
+                    "LQ": "/img/08a_KOD_DA_VINCI/1210/7.jpg",
+                    "HQ": "/img/08a_KOD_DA_VINCI/7.jpg"
+                }
+            ],
+            "description": "",
+            "descriptionEN": ""
+        },
+        {
             "name": "BIBLIA GUTENBERGA",
             "nameEN": "GUTENBERG BIBLE",
             "shortDescription": "CENTRUM NAUKI KOPERNIK",
