@@ -5,7 +5,16 @@
       <div class="slide" ng-repeat="image in ::$ctrl.item.imagesList">
         <div ng-show="$ctrl.activeSlide == $index">
           <div class="numbertext">{{ $index + 1 }} / {{::$ctrl.item.imagesList.length}}</div>
-          <img ng-src="{{ image.LQ }}">
+          <div class="zoom-overlay-container">
+            <img ng-src="{{ image.LQ }}">
+            <div class="zoom-overlay" ng-if="::image.HQ">
+              <a href="/" ng-href="{{ ::image.HQ }}" target="_blank" ng-class="{ disabled: !image.HQ }">
+                <div class="zoom-overlay-content">
+                  <i class="fa fa-search align-middle"></i>
+                </div>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
 

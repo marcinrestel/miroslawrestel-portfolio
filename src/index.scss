@@ -297,6 +297,52 @@ body {
             max-height: calc(100vh - 120px - 60px - 30px - 34px);
             max-width: 1210px;
         }
+
+        a {
+            &.disabled{
+                pointer-events: none;
+                cursor: default;
+            }
+        }
+        .zoom-overlay-container{
+            position: relative;
+            display: inline-block;
+            .zoom-overlay {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                .zoom-overlay-content{
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    height: 50px;
+                    width: 0;
+                    font-size: 20px;
+                    transition: .2s ease;
+                    background-color: #fff;
+                    opacity: 0.7;
+                    display: flex;
+                    align-items: center;
+                    color: black;
+                    z-index: -1;
+                    i {
+                        display: none;
+                        padding: 15px;
+                    }
+                }
+                &:hover {
+                    .zoom-overlay-content{
+                        i {
+                            display: initial;
+                        }
+                        width: 50px;
+                        z-index: 9999;
+                    }
+                }
+            }
+        }
     }
     .caption-container {
         text-align: center;
