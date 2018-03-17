@@ -1,0 +1,24 @@
+<div class="modal">
+  <div class="center-content-vertically">
+    <span class="close" ng-click="$ctrl.active = false">&times;</span>
+    <div class="modal-content">
+      <div class="slide" ng-repeat="image in ::$ctrl.item.imagesList">
+        <div ng-show="$ctrl.activeSlide == $index">
+          <div class="numbertext">{{ $index + 1 }} / {{::$ctrl.item.imagesList.length}}</div>
+          <img ng-src="{{ image.LQ }}">
+        </div>
+      </div>
+
+      <i class="fa fa-chevron-left prev" ng-click="$ctrl.changeSlide($ctrl.activeSlide - 1, $ctrl.item.imagesList.length)"></i>
+      <i class="fa fa-chevron-right next" ng-click="$ctrl.changeSlide($ctrl.activeSlide + 1, $ctrl.item.imagesList.length)"></i>
+
+      <div class="caption-container">
+        {{::$ctrl.item.name}}
+      </div>
+      <slick class="thumbnail-list" infinite=false slides-to-show=6 slides-to-scroll=6 ng-if="::$ctrl.item.imagesList.length > 1">
+        <img ng-repeat="item in ::$ctrl.item.imagesList" ng-src="{{ item.LQ }}" ng-click="::$ctrl.changeSlide($index, $ctrl.item.imagesList.length)"
+          ng-class="{'active': $index == $ctrl.activeSlide }">
+      </slick>
+    </div>
+  </div>
+</div>

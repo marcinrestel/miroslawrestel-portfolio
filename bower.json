@@ -8,7 +8,9 @@
     "angular": "^1.6.2",
     "angular-animate": "^1.6.9",
     "malihu-custom-scrollbar-plugin": "^3.1.5",
-    "ng-scrollbars": "^0.0.11"
+    "ng-scrollbars": "^0.0.11",
+    "slick-carousel": "^1.8.1",
+    "angular-slick-carousel": "^3.1.7"
   },
   "devDependencies": {
     "angular-mocks": "^1.6.2"
@@ -19,6 +21,18 @@
         "./dist/css/bootstrap.min.css",
         "./dist/js/bootstrap.min.js"
       ]
+    },
+    "slick-carousel": {
+      "main": [
+        "slick/slick.js",
+        "slick/slick.css",
+        "slick/slick.less",
+        "slick/slick.scss",
+        "slick/slick-theme.css"
+    ]
     }
+  },
+  "resolutions": {
+    "slick-carousel": "^1.8.1"
   }
 }
