@@ -5,7 +5,7 @@ angular
     controller: appCtrl
   });
 
-  function appCtrl($scope, $http, MODAL_SCROLL_CONFIG) {
+  function appCtrl($scope, $http, MODAL_SCROLL_CONFIG, DATABASE) {
     var vm = this;
     vm.changeModalShowcaseImage = changeModalShowcaseImage;
     vm.jsModalImagesScrollConfig = MODAL_SCROLL_CONFIG;
@@ -21,17 +21,14 @@ angular
     }
 
     function init() {
-        $http.get('database.json').then(function (response) {
-            vm.aboutImageSrc = response.data.aboutImageSrc;
-            vm.portfolioItems = response.data.portfolioItems;
-            vm.carouselItems = response.data.carouselItems;
-            vm.aboutMail = response.data.aboutMail;
-            vm.aboutLinkedin = response.data.aboutLinkedin;
-            vm.aboutText = response.data.aboutText;
-            preloadImages();
-        }, function (err) {
-            // console.log(err);
-        });
+        var response = DATABASE;
+        vm.aboutImageSrc = response.aboutImageSrc;
+        vm.portfolioItems = response.portfolioItems;
+        vm.carouselItems = response.carouselItems;
+        vm.aboutMail = response.aboutMail;
+        vm.aboutLinkedin = response.aboutLinkedin;
+        vm.aboutText = response.aboutText;
+        preloadImages();
     }
 
     function preloadImages() {
