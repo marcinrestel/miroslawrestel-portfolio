@@ -21,15 +21,6 @@
         "./dist/css/bootstrap.min.css",
         "./dist/js/bootstrap.min.js"
       ]
-    },
-    "slick-carousel": {
-      "main": [
-        "slick/slick.js",
-        "slick/slick.css",
-        "slick/slick.less",
-        "slick/slick.scss",
-        "slick/slick-theme.css"
-    ]
     }
   },
   "resolutions": {
