@@ -49,11 +49,13 @@ angular
         for (i = 0; i < carouselItemsLength; i++) {
             c[i] = new Image();
             c[i].onload = onloadFunction;
+            c[i].onerror = onloadFunction;
             c[i].src = vm.carouselItems[i].src;
         }
         for (i; i < portfolioItemsLength; i++) {
             c[i] = new Image();
             c[i].onload = onloadFunction;
+            c[i].onerror = onloadFunction;
             c[i].src = vm.portfolioItems[i - carouselItemsLength].portfolioItemImage;
         }
 
