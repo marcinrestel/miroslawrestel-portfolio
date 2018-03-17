@@ -17,7 +17,7 @@
         {
             "name": "TAJEMNICZY OGRÓD",
             "description": "",
-            "src": "/img/19_TAJEMNICZY_OGROD/1.jpg"
+            "src": "/img/02a_BACK_TO_THE_FUTURE/1210/1.jpg"
         }
     ],
     "portfolioItems": [
@@ -168,6 +168,21 @@
             "descriptionEN": "Fulldome project commissioned by Copernicus Copernicus Planetarium and Copernicus Science Center.\nThis is the first production in this technology in Poland.\n\nNagrody:\n\nBest Fulldome Film\n2016 Immersive Festival Madrid\n\nBest3D film\n2015 Immersive Film Festival Espinho\n\nFeature Films -3rd Prize\n2015 Russian Fulldome Festival Yaroslav\n\nBest Movie\n2015 Central European Fulldome Festival Brno\n\nGolden Star Award\n2014 IIPF Korea\n\nBest Audience Choice\n2014 Macau International Fulldome Film Festival\n\nBest Visuals\n2014 Macau International Fulldome Film Festival\n\nBest Script / Story\n2013 Imiloa Festival\n\nDirectors Award\n2013 FullDome Festival Jena"
         },
         {
+            "name": "BACK TO THE FUTURE",
+            "nameEN": "",
+            "shortDescription": "PROJEKT ARCHITEKTURA",
+            "shortDescriptionEN": "",
+            "portfolioItemImage": "/img/02a_BACK_TO_THE_FUTURE/1210/1.jpg",
+            "imagesList": [
+                {
+                    "LQ": "/img/02a_BACK_TO_THE_FUTURE/1210/1.jpg",
+                    "HQ": "/img/02a_BACK_TO_THE_FUTURE/1.jpg"
+                }
+            ],
+            "description": "",
+            "descriptionEN": ""
+        },
+        {
             "name": "RODZINNE REWOLUCJE",
             "nameEN": "",
             "shortDescription": "PROJEKT ARCHITEKTURA",
@@ -193,38 +208,64 @@
                 {
                     "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/5.jpg",
                     "HQ": "/img/03_RODZINNE_REWOLUCJE/5.jpg"
+                }
+            ],
+            "description": "",
+            "descriptionEN": ""
+        },
+        {
+            "name": "WICHTOWE WZGÓRZA",
+            "nameEN": "",
+            "shortDescription": "PROJEKT ARCHITEKTURA",
+            "shortDescriptionEN": "",
+            "portfolioItemImage": "/img/03a_WICHTOWE_WZGORZA/1210/1.jpg",
+            "imagesList": [
+                {
+                    "LQ": "/img/03a_WICHTOWE_WZGORZA/1210/1.jpg",
+                    "HQ": "/img/03a_WICHTOWE_WZGORZA/1.jpg"
                 },
                 {
-                    "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/6.jpg",
-                    "HQ": "/img/03_RODZINNE_REWOLUCJE/6.jpg"
+                    "LQ": "/img/03a_WICHTOWE_WZGORZA/1210/2.jpg",
+                    "HQ": "/img/03a_WICHTOWE_WZGORZA/2.jpg"
                 },
                 {
-                    "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/7.jpg",
-                    "HQ": "/img/03_RODZINNE_REWOLUCJE/7.jpg"
+                    "LQ": "/img/03a_WICHTOWE_WZGORZA/1210/3.jpg",
+                    "HQ": "/img/03a_WICHTOWE_WZGORZA/3.jpg"
                 },
                 {
-                    "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/8.jpg",
-                    "HQ": "/img/03_RODZINNE_REWOLUCJE/8.jpg"
+                    "LQ": "/img/03a_WICHTOWE_WZGORZA/1210/4.jpg",
+                    "HQ": "/img/03a_WICHTOWE_WZGORZA/4.jpg"
                 },
                 {
-                    "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/9.jpg",
-                    "HQ": "/img/03_RODZINNE_REWOLUCJE/9.jpg"
+                    "LQ": "/img/03a_WICHTOWE_WZGORZA/1210/5.jpg",
+                    "HQ": "/img/03a_WICHTOWE_WZGORZA/5.jpg"
+                }
+            ],
+            "description": "",
+            "descriptionEN": ""
+        },
+        {
+            "name": "SPECTRE",
+            "nameEN": "",
+            "shortDescription": "PROJEKT ARCHITEKTURA",
+            "shortDescriptionEN": "",
+            "portfolioItemImage": "/img/03b_SPECTRE/1210/1.jpg",
+            "imagesList": [
+                {
+                    "LQ": "/img/03b_SPECTRE/1210/1.jpg",
+                    "HQ": "/img/03b_SPECTRE/1.jpg"
                 },
                 {
-                    "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/10.jpg",
-                    "HQ": "/img/03_RODZINNE_REWOLUCJE/10.jpg"
+                    "LQ": "/img/03b_SPECTRE/1210/2.jpg",
+                    "HQ": "/img/03b_SPECTRE/2.jpg"
                 },
                 {
-                    "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/11.jpg",
-                    "HQ": "/img/03_RODZINNE_REWOLUCJE/11.jpg"
+                    "LQ": "/img/03b_SPECTRE/1210/3.jpg",
+                    "HQ": "/img/03b_SPECTRE/3.jpg"
                 },
                 {
-                    "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/12.jpg",
-                    "HQ": "/img/03_RODZINNE_REWOLUCJE/12.jpg"
-                },
-                {
-                    "LQ": "/img/03_RODZINNE_REWOLUCJE/1210/13.jpg",
-                    "HQ": "/img/03_RODZINNE_REWOLUCJE/13.jpg"
+                    "LQ": "/img/03b_SPECTRE/1210/4.jpg",
+                    "HQ": "/img/03b_SPECTRE/4.jpg"
                 }
             ],
             "description": "",
