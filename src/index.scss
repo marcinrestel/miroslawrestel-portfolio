@@ -1,0 +1,246 @@
+nav {
+    opacity: 0.95;
+}
+
+body {
+    background-color: #444;
+}
+
+[ng\:cloak],
+[ng-cloak],
+[data-ng-cloak],
+[x-ng-cloak],
+.ng-cloak,
+.x-ng-cloak {
+    display: none !important;
+}
+
+.screen-cover {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-fluid--no-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.portfolio-container .portfolio-item {
+    padding: 0;
+    height: 380px;
+    max-width: 380px;
+    border: 1px solid #333;
+    background-size: cover;
+    background-position: center;
+}
+
+.portfolio-container .portfolio-text {
+    background-color: #fff;
+    height: 100%;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 0;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+.portfolio-container .portfolio-text:hover,
+.portfolio-container .portfolio-text.active {
+    opacity: 0.8;
+    font-size: 1em;
+}
+
+.carousel-caption--add-shadow-to-items * {
+    text-shadow: 0px 0px 10px black;
+}
+
+.bordered-top {
+    border-top: 1px solid #ddd;
+}
+
+.bordered-bottom {
+    border-bottom: 1px solid #ddd;
+}
+
+.about {
+    background-color: #333;
+    color: #ddd;
+    min-height: 400px;
+    position: relative;
+}
+
+.about .about__contact .about__contact__item i {
+    margin: 5px;
+}
+
+.about .about__text {
+    height: 400px;
+}
+
+.about .about__text .about__text__name {
+    margin-bottom: 10px;
+    font-size: 1.3em;
+}
+
+.about .about__image {
+    height: 400px;
+}
+
+.about .about__image * {
+    border: 1px solid #ddd;
+    height: 250px;
+    width: 250px;
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+}
+
+.footer {
+    color: #ddd;
+    padding: 10px;
+}
+
+.navbar-brand {
+    cursor: default;
+}
+
+.nav-item {
+    cursor: pointer;
+}
+
+.nav-item.active {
+    border-bottom: 1px solid #ddd;
+}
+
+body.modal-open {
+    margin-right: 0 !important;
+    padding-right: 17px !important;
+}
+
+.modal-content {
+    background-color: #333;
+    color: #ddd !important;
+    position: relative;
+}
+
+.modal-body>.modal-title {
+    text-align: center;
+}
+
+.modal-body>.close {
+    color: #ddd;
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    float: none;
+}
+
+.modal-images-list {
+    overflow-y: hidden;
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+}
+
+.modal-images-list .modal-image {
+    margin: 3px 6px;
+    min-width: 150px;
+    width: 150px;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    border: 2px solid #ddd;
+    border-radius: 15%;
+}
+
+.modal-images-list .modal-image:not(.active):hover {
+    border-radius: 25%;
+}
+
+.modal-images-list .modal-image.active {
+    border: 2px solid #333;
+    border-radius: 25%;
+}
+
+.modal-images-list .modal-image-placeholder {
+    display: inline-block;
+    width: 160px;
+    height: 160px;
+    background-image: url("/img/loading_modals.gif");
+    background-position: center;
+    background-size: 110px 80px;
+    background-repeat: no-repeat;
+}
+
+.modal-showcase-image {
+    width: 100%;
+    padding-top: 66.64%;
+    min-height: 300px;
+    position: relative;
+}
+
+.modal-showcase-image div {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 95%;
+    position: absolute;
+    height: 95%;
+    margin: 2.5%;
+    top: 0;
+    left: 0;
+    background-position: center;
+}
+
+.divider-horizontal {
+    margin: 10px 20%;
+    border-bottom: 1px solid #ddd;
+}
+
+.divider-horizondal--middle-size {
+    width: 60%;
+}
+
+.sample-show-hide {
+    transition: all linear 0.5s;
+}
+
+.sample-show-hide.ng-hide {
+    opacity: 0;
+}
+
+@media (min-width: 768px) {
+    .modal-lg-custom {
+        max-width: 730px !important;
+        width: auto !important;
+    }
+    .modal-images-list {
+        border-left: 1px solid #ddd;
+        padding-left: 2px;
+        height: 560px;
+        max-width: 190px;
+    }
+}
+
+@media (min-width: 990px) {
+    .modal-lg-custom {
+        max-width: 900px !important;
+        width: auto !important;
+    }
+}
+
+@media (min-width: 2150px) {
+    .modal-lg-custom {
+        max-width: 1500px !important;
+        width: auto !important;
+    }
+    .modal-images-list {
+        height: 810px;
+    }
+}
