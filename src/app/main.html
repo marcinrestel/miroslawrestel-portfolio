@@ -1,4 +1,5 @@
 <custom-modal item="$ctrl.currentPortfolioItem" active="$ctrl.modalActive" ng-if="$ctrl.modalActive"></custom-modal>
+
 <div ng-show="!$ctrl.imagesLoaded" id="loader_div" class="sample-show-hide">
   <div class="loader">
     <div class="inner one"></div>
@@ -6,6 +7,7 @@
     <div class="inner three"></div>
   </div>
 </div>
+
 <div ng-if="$ctrl.imagesLoaded" ng-cloak>
   <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
