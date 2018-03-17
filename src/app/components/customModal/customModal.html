@@ -9,8 +9,8 @@
         </div>
       </div>
 
-      <i class="fa fa-chevron-left prev" ng-click="$ctrl.changeSlide($ctrl.activeSlide - 1, $ctrl.item.imagesList.length)"></i>
-      <i class="fa fa-chevron-right next" ng-click="$ctrl.changeSlide($ctrl.activeSlide + 1, $ctrl.item.imagesList.length)"></i>
+      <i class="fa fa-chevron-left prev" ng-class="{disabled: $ctrl.activeSlide <= 0}" ng-click="$ctrl.changeSlide($ctrl.activeSlide - 1, $ctrl.item.imagesList.length)"></i>
+      <i class="fa fa-chevron-right next" ng-class="{disabled: $ctrl.activeSlide >= $ctrl.item.imagesList.length - 1}" ng-click="$ctrl.changeSlide($ctrl.activeSlide + 1, $ctrl.item.imagesList.length)"></i>
 
       <div class="caption-container">
         {{::$ctrl.item.name}}

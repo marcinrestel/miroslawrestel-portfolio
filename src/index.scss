@@ -277,6 +277,10 @@ body {
         border-radius: 0 3px 3px 0;
         user-select: none;
         -webkit-user-select: none;
+        &.disabled {
+            cursor: default;
+            opacity: 0.2;
+        }
     }
     /* Position the "next button" to the right */
     .next {
@@ -301,24 +305,24 @@ body {
         color: white;
     }
     .thumbnail-list {
-        //   max-width: 1210px;
         img {
             height: 100px;
             width: 100px;
             opacity: 0.6;
-            object-fit: cover; // margin: 0 10px;
+            object-fit: cover;
             cursor: pointer;
         }
         .active,
         img:hover {
             opacity: 1;
         }
+        .slick-disabled {
+            cursor: default;
+        }
     }
     .numbertext {
         color: #f2f2f2;
         font-size: 12px;
         padding: 8px 12px;
-        // position: absolute;
-        // top: 0;
-      }
+    }
 }
