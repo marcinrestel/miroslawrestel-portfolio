@@ -1,9 +1,13 @@
+$light-text: #f1f1f1;
+$dark-background: #191919;
+
 nav {
     opacity: 0.95;
+    background-color: $dark-background;
 }
 
 body {
-    background-color: #444;
+    background-color: #000;
 }
 
 [ng\:cloak],
@@ -72,16 +76,18 @@ body {
 }
 
 .bordered-top {
-    border-top: 1px solid #ddd;
+    border-top: 1px solid $light-text;
 }
 
 .bordered-bottom {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $light-text;
 }
 
 .about {
-    background-color: #333;
-    color: #ddd;
+    // background-color: #333;
+    // color: $light-text;
+    color: $light-text;
+    background-color: $dark-background;
     min-height: 400px;
     position: relative;
     .about__contact .about__contact__item i {
@@ -98,7 +104,7 @@ body {
         height: 400px;
     }
     .about__image * {
-        border: 1px solid #ddd;
+        // border: 1px solid $light-text;
         height: 250px;
         width: 250px;
         background-size: cover;
@@ -108,7 +114,7 @@ body {
 }
 
 .footer {
-    color: #ddd;
+    color: $light-text;
     padding: 10px;
 }
 
@@ -121,12 +127,12 @@ body {
 }
 
 .nav-item.active {
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $light-text;
 }
 
 .divider-horizontal {
     margin: 10px 20%;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid $light-text;
 }
 
 .divider-horizondal--middle-size {
