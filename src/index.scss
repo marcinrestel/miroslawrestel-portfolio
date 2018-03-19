@@ -1,6 +1,5 @@
 $light-text: #f1f1f1;
 $dark-background: #191919;
-
 nav {
     opacity: 0.95;
     background-color: $dark-background;
@@ -17,6 +16,14 @@ body {
 .ng-cloak,
 .x-ng-cloak {
     display: none !important;
+}
+
+a {
+    color: inherit;
+    &:hover {
+        color: inherit;
+        text-decoration: inherit;
+    }
 }
 
 .screen-cover {
@@ -90,6 +97,13 @@ body {
     background-color: $dark-background;
     min-height: 400px;
     position: relative;
+    background-image: url('../img/about_tlo.jpg');
+    background-size: cover;
+    // background-size: initial;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
+    background-position-y: center;
+    background-position-x: right;
     .about__contact .about__contact__item i {
         margin: 5px;
     }
@@ -170,8 +184,8 @@ body {
         text-align: center;
         width: calc(100vw - 100px);
     }
-    @media (min-width: 1500px){
-        .modal-content{
+    @media (min-width: 1500px) {
+        .modal-content {
             width: 1400px;
         }
     }
@@ -252,9 +266,7 @@ body {
                         padding: 15px;
                     }
                 }
-
-                
-                @media (max-width: 700px){
+                @media (max-width: 700px) {
                     .zoom-overlay-content {
                         i {
                             display: initial;
@@ -263,7 +275,6 @@ body {
                         z-index: 9999;
                     }
                 }
-                
                 &:hover {
                     .zoom-overlay-content {
                         i {
