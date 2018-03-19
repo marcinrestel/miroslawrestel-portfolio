@@ -26,16 +26,7 @@ body {
     padding-right: 0 !important;
 }
 
-// .portfolio-container .portfolio-item {
-//     padding: 0;
-//     height: 380px;
-//     max-width: 380px;
-//     border: 1px solid #333;
-//     background-size: cover;
-//     background-position: center;
-// }
 .portfolio-container {
-    // text-align: left;
     background-color: black;
     .portfolio-item {
         height: 25vw;
@@ -133,77 +124,6 @@ body {
     border-bottom: 1px solid #ddd;
 }
 
-// body.modal-open {
-//     margin-right: 0 !important;
-//     padding-right: 17px !important;
-// }
-// .modal-content {
-//     background-color: #333;
-//     color: #ddd !important;
-//     position: relative;
-// }
-// .modal-body>.modal-title {
-//     text-align: center;
-// }
-// .modal-body>.close {
-//     color: #ddd;
-//     position: fixed;
-//     top: 10px;
-//     right: 10px;
-//     float: none;
-// }
-// .modal-images-list {
-//     overflow-y: hidden;
-//     width: 100%;
-//     height: 180px;
-//     margin: 0 auto;
-// }
-// .modal-images-list .modal-image {
-//     margin: 3px 6px;
-//     min-width: 150px;
-//     width: 150px;
-//     height: 150px;
-//     background-size: cover;
-//     background-position: center;
-//     cursor: pointer;
-//     transition: all 0.3s;
-//     display: inline-block;
-//     border: 2px solid #ddd;
-//     border-radius: 15%;
-// }
-// .modal-images-list .modal-image:not(.active):hover {
-//     border-radius: 25%;
-// }
-// .modal-images-list .modal-image.active {
-//     border: 2px solid #333;
-//     border-radius: 25%;
-// }
-// .modal-images-list .modal-image-placeholder {
-//     display: inline-block;
-//     width: 160px;
-//     height: 160px;
-//     background-image: url("../img/loading_modals.gif");
-//     background-position: center;
-//     background-size: 110px 80px;
-//     background-repeat: no-repeat;
-// }
-// .modal-showcase-image {
-//     width: 100%;
-//     padding-top: 66.64%;
-//     min-height: 300px;
-//     position: relative;
-// }
-// .modal-showcase-image div {
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     width: 95%;
-//     position: absolute;
-//     height: 95%;
-//     margin: 2.5%;
-//     top: 0;
-//     left: 0;
-//     background-position: center;
-// }
 .divider-horizontal {
     margin: 10px 20%;
     border-bottom: 1px solid #ddd;
@@ -221,33 +141,6 @@ body {
     opacity: 0;
 }
 
-// @media (min-width: 768px) {
-//     .modal-lg-custom {
-//         max-width: 730px !important;
-//         width: auto !important;
-//     }
-//     .modal-images-list {
-//         border-left: 1px solid #ddd;
-//         padding-left: 2px;
-//         height: 560px;
-//         max-width: 190px;
-//     }
-// }
-// @media (min-width: 990px) {
-//     .modal-lg-custom {
-//         max-width: 900px !important;
-//         width: auto !important;
-//     }
-// }
-// @media (min-width: 2150px) {
-//     .modal-lg-custom {
-//         max-width: 1500px !important;
-//         width: auto !important;
-//     }
-//     .modal-images-list {
-//         height: 810px;
-//     }
-// }
 .custom-modal {
     display: block;
     position: fixed;
@@ -268,8 +161,13 @@ body {
         background-color: black;
         margin: 30px auto;
         padding: 0;
-        width: 1400px;
         text-align: center;
+        width: calc(100vw - 100px);
+    }
+    @media (min-width: 1500px){
+        .modal-content{
+            width: 1400px;
+        }
     }
     .close {
         color: white;
@@ -348,6 +246,18 @@ body {
                         padding: 15px;
                     }
                 }
+
+                
+                @media (max-width: 700px){
+                    .zoom-overlay-content {
+                        i {
+                            display: initial;
+                        }
+                        width: 50px;
+                        z-index: 9999;
+                    }
+                }
+                
                 &:hover {
                     .zoom-overlay-content {
                         i {
