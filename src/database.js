@@ -209,7 +209,7 @@ angular
         descriptionEN: ''
       },
       {
-        name: 'WICHTOWE WZGÓRZA',
+        name: 'WICHROWE WZGÓRZA',
         nameEN: '',
         shortDescription: 'PROJEKT ARCHITEKTURA',
         shortDescriptionEN: '',
