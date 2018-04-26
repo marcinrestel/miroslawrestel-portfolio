@@ -16,9 +16,9 @@ angular
         src: 'img/09_BIBLIA_GUTENBERGA/2.jpg'
       },
       {
-        name: 'BACK TO THE FUTURE',
+        name: 'PORTRET Z RODZINĄ WE WNĘTRZU',
         description: '',
-        src: 'img/02a_BACK_TO_THE_FUTURE/1210/1.jpg'
+        src: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1.jpg'
       }
     ],
     portfolioItems: [{
@@ -179,6 +179,48 @@ angular
         descriptionEN: ''
       },
       {
+        name: 'THE SQUARE',
+        nameEN: '',
+        shortDescription: 'PROJEKT ARCHITEKTURA',
+        shortDescriptionEN: '',
+        portfolioItemImage: 'img/02b_THE_SQUARE/810/1.jpg',
+        imagesList: [{
+            LQ: 'img/02b_THE_SQUARE/810/1.jpg',
+            HQ: 'img/02b_THE_SQUARE/1.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/810/2.jpg',
+            HQ: 'img/02b_THE_SQUARE/2.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/810/3.jpg',
+            HQ: 'img/02b_THE_SQUARE/3.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/810/4.jpg',
+            HQ: 'img/02b_THE_SQUARE/4.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/810/5.jpg',
+            HQ: 'img/02b_THE_SQUARE/5.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/810/6.jpg',
+            HQ: 'img/02b_THE_SQUARE/6.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/810/7.jpg',
+            HQ: 'img/02b_THE_SQUARE/7.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/810/8.jpg',
+            HQ: 'img/02b_THE_SQUARE/8.jpg'
+          }
+        ],
+        description: '',
+        descriptionEN: ''
+      },
+      {
         name: 'RODZINNE REWOLUCJE',
         nameEN: '',
         shortDescription: 'PROJEKT ARCHITEKTURA',
@@ -295,30 +337,34 @@ angular
         nameEN: '',
         shortDescription: 'ANNA KOCHMAN',
         shortDescriptionEN: '',
-        portfolioItemImage: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1.jpg',
+        portfolioItemImage: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/1.jpg',
         imagesList: [{
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1.jpg',
-            HQ: ''
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/1.jpg',
+            HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/2.jpg',
-            HQ: ''
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/2.jpg',
+            HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/2.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/3.jpg',
-            HQ: ''
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/3.jpg',
+            HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/3.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/4.jpg',
-            HQ: ''
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/4.jpg',
+            HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/4.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/5.jpg',
-            HQ: ''
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/5.jpg',
+            HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/5.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/6.jpg',
-            HQ: ''
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/6.jpg',
+            HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/6.jpg'
+          },
+          {
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/7.jpg',
+            HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/7.jpg'
           }
         ],
         description: '',
