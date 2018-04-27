@@ -18,7 +18,7 @@ angular
       {
         name: 'PORTRET Z RODZINĄ WE WNĘTRZU',
         description: '',
-        src: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1.jpg'
+        src: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/1.jpg'
       }
     ],
     portfolioItems: [{
@@ -166,6 +166,48 @@ angular
         descriptionEN: 'Fulldome project commissioned by Copernicus Copernicus Planetarium and Copernicus Science Center.\nThis is the first production in this technology in Poland.\n\nNagrody:\n\nBest Fulldome Film\n2016 Immersive Festival Madrid\n\nBest3D film\n2015 Immersive Film Festival Espinho\n\nFeature Films -3rd Prize\n2015 Russian Fulldome Festival Yaroslav\n\nBest Movie\n2015 Central European Fulldome Festival Brno\n\nGolden Star Award\n2014 IIPF Korea\n\nBest Audience Choice\n2014 Macau International Fulldome Film Festival\n\nBest Visuals\n2014 Macau International Fulldome Film Festival\n\nBest Script / Story\n2013 Imiloa Festival\n\nDirectors Award\n2013 FullDome Festival Jena'
       },
       {
+        name: 'THE SQUARE',
+        nameEN: '',
+        shortDescription: 'PROJEKT ARCHITEKTURA',
+        shortDescriptionEN: '',
+        portfolioItemImage: 'img/02b_THE_SQUARE/1210/1.jpg',
+        imagesList: [{
+            LQ: 'img/02b_THE_SQUARE/1210/1.jpg',
+            HQ: 'img/02b_THE_SQUARE/1.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/1210/2.jpg',
+            HQ: 'img/02b_THE_SQUARE/2.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/1210/3.jpg',
+            HQ: 'img/02b_THE_SQUARE/3.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/1210/4.jpg',
+            HQ: 'img/02b_THE_SQUARE/4.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/1210/5.jpg',
+            HQ: 'img/02b_THE_SQUARE/5.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/1210/6.jpg',
+            HQ: 'img/02b_THE_SQUARE/6.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/1210/7.jpg',
+            HQ: 'img/02b_THE_SQUARE/7.jpg'
+          },
+          {
+            LQ: 'img/02b_THE_SQUARE/1210/8.jpg',
+            HQ: 'img/02b_THE_SQUARE/8.jpg'
+          }
+        ],
+        description: '',
+        descriptionEN: ''
+      },
+      {
         name: 'BACK TO THE FUTURE',
         nameEN: '',
         shortDescription: 'PRACA WŁASNA',
@@ -175,48 +217,6 @@ angular
           LQ: 'img/02a_BACK_TO_THE_FUTURE/1210/1.jpg',
           HQ: 'img/02a_BACK_TO_THE_FUTURE/1.jpg'
         }],
-        description: '',
-        descriptionEN: ''
-      },
-      {
-        name: 'THE SQUARE',
-        nameEN: '',
-        shortDescription: 'PROJEKT ARCHITEKTURA',
-        shortDescriptionEN: '',
-        portfolioItemImage: 'img/02b_THE_SQUARE/810/1.jpg',
-        imagesList: [{
-            LQ: 'img/02b_THE_SQUARE/810/1.jpg',
-            HQ: 'img/02b_THE_SQUARE/1.jpg'
-          },
-          {
-            LQ: 'img/02b_THE_SQUARE/810/2.jpg',
-            HQ: 'img/02b_THE_SQUARE/2.jpg'
-          },
-          {
-            LQ: 'img/02b_THE_SQUARE/810/3.jpg',
-            HQ: 'img/02b_THE_SQUARE/3.jpg'
-          },
-          {
-            LQ: 'img/02b_THE_SQUARE/810/4.jpg',
-            HQ: 'img/02b_THE_SQUARE/4.jpg'
-          },
-          {
-            LQ: 'img/02b_THE_SQUARE/810/5.jpg',
-            HQ: 'img/02b_THE_SQUARE/5.jpg'
-          },
-          {
-            LQ: 'img/02b_THE_SQUARE/810/6.jpg',
-            HQ: 'img/02b_THE_SQUARE/6.jpg'
-          },
-          {
-            LQ: 'img/02b_THE_SQUARE/810/7.jpg',
-            HQ: 'img/02b_THE_SQUARE/7.jpg'
-          },
-          {
-            LQ: 'img/02b_THE_SQUARE/810/8.jpg',
-            HQ: 'img/02b_THE_SQUARE/8.jpg'
-          }
-        ],
         description: '',
         descriptionEN: ''
       },
@@ -337,33 +337,33 @@ angular
         nameEN: '',
         shortDescription: 'ANNA KOCHMAN',
         shortDescriptionEN: '',
-        portfolioItemImage: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/1.jpg',
+        portfolioItemImage: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/1.jpg',
         imagesList: [{
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/1.jpg',
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/1.jpg',
             HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/2.jpg',
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/2.jpg',
             HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/2.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/3.jpg',
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/3.jpg',
             HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/3.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/4.jpg',
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/4.jpg',
             HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/4.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/5.jpg',
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/5.jpg',
             HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/5.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/6.jpg',
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/6.jpg',
             HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/6.jpg'
           },
           {
-            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/810/7.jpg',
+            LQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/1210/7.jpg',
             HQ: 'img/04a_PORTRET_Z_RODZINĄ_WE_WNĘTRZU/7.jpg'
           }
         ],
