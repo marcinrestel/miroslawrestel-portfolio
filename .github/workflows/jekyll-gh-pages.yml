@@ -34,8 +34,10 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: '10.x'
-      - name: Install Dependencies
-        run: npm install && bower install
+      - name: Install Bower
+        run: npm install -g bower
+      - name: Install dependencies
+        run:  bower install
       - name: Build
         run: npm run build
       - name: Build with Jekyll
