@@ -37,7 +37,7 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
-          node-version: '16.x'
+          node-version: '14.18.2'
       - name: Install Bower
         run: npm install -g bower
       - name: Install bower dependencies
