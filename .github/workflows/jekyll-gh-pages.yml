@@ -33,7 +33,7 @@ jobs:
       - name: Setup Python
         uses: actions/setup-python@v4.6.0
         with:
-          python-version: '3'
+          python-version: '2.7'
       - name: Setup Node
         uses: actions/setup-node@v1
         with:
@@ -42,8 +42,6 @@ jobs:
         run: npm install -g bower
       - name: Install bower dependencies
         run:  bower install
-      - name: set python2 env variable
-        run: alias python2=python
       - name: Install npm dependencies
         run:  npm install
       - name: Build
