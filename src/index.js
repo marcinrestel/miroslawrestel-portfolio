@@ -1,2 +1,2 @@
 angular
-  .module('app', ['duScroll', 'ngScrollbars', 'ngAnimate', 'slickCarousel']);
+  .module('app', ['ngScrollbars', 'ngAnimate', 'slickCarousel']);
