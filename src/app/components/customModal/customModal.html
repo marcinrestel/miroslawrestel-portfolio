@@ -2,32 +2,23 @@
   <div class="center-content-vertically">
     <span class="close" ng-click="$ctrl.active = false">&times;</span>
     <div class="modal-content">
-      <div class="slide" ng-repeat="image in ::$ctrl.item.imagesList">
-        <div ng-show="$ctrl.activeSlide == $index">
-          <div class="numbertext">{{ $index + 1 }} / {{::$ctrl.item.imagesList.length}}</div>
-          <div class="zoom-overlay-container">
-            <img ng-src="{{ image.LQ }}">
-            <div class="zoom-overlay" ng-if="::image.HQ">
-              <a href="/" ng-href="{{ ::image.HQ }}" target="_blank" ng-class="{ disabled: !image.HQ }">
-                <div class="zoom-overlay-content">
-                  <i class="fa fa-search align-middle"></i>
-                </div>
-              </a>
-            </div>
+      <div class="item-details">
+        <div class="zoom-overlay-container">
+          <img ng-src="{{ $ctrl.item.portfolioItemImage }}">
+          <div class="zoom-overlay" ng-if="::$ctrl.item.portfolioItemImageHQ">
+            <a href="/" ng-href="{{ ::$ctrl.item.portfolioItemImageHQ }}" target="_blank"
+               ng-class="{ disabled: !$ctrl.item.portfolioItemImageHQ }">
+              <div class="zoom-overlay-content">
+                <i class="fa fa-search align-middle"></i>
+              </div>
+            </a>
           </div>
         </div>
       </div>
 
-      <i class="fa fa-chevron-left prev" ng-class="{disabled: $ctrl.activeSlide <= 0}" ng-click="$ctrl.changeSlide($ctrl.activeSlide - 1, $ctrl.item.imagesList.length)"></i>
-      <i class="fa fa-chevron-right next" ng-class="{disabled: $ctrl.activeSlide >= $ctrl.item.imagesList.length - 1}" ng-click="$ctrl.changeSlide($ctrl.activeSlide + 1, $ctrl.item.imagesList.length)"></i>
-
       <div class="caption-container">
         {{::$ctrl.item.name}}
       </div>
-      <slick class="thumbnail-list" infinite=false slides-to-show=6 slides-to-scroll=6 ng-if="::$ctrl.item.imagesList.length > 1">
-        <img ng-repeat="item in ::$ctrl.item.imagesList" ng-src="{{ item.LQ }}" ng-click="::$ctrl.changeSlide($index, $ctrl.item.imagesList.length)"
-          ng-class="{'active': $index == $ctrl.activeSlide }">
-      </slick>
     </div>
   </div>
 </div>

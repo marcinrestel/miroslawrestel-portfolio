@@ -3,10 +3,13 @@ $dark-background: #191919;
 nav {
     opacity: 0.95;
     background-color: $dark-background;
+    height: 80px;
 }
 
 body {
     background-color: #000;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
 }
 
 [ng\:cloak],
@@ -90,43 +93,6 @@ a {
     border-bottom: 1px solid $light-text;
 }
 
-.about {
-    // background-color: #333;
-    // color: $light-text;
-    color: $light-text;
-    background-color: $dark-background;
-    min-height: 400px;
-    position: relative;
-    background-image: url('../img/about_tlo.jpg');
-    background-size: cover;
-    // background-size: initial;
-    // background-repeat: no-repeat;
-    // background-attachment: fixed;
-    background-position-y: center;
-    background-position-x: right;
-    .about__contact .about__contact__item i {
-        margin: 5px;
-    }
-    .about__text {
-        height: 400px;
-    }
-    .about__text .about__text__name {
-        margin-bottom: 10px;
-        font-size: 1.3em;
-    }
-    .about__image {
-        height: 400px;
-    }
-    .about__image * {
-        // border: 1px solid $light-text;
-        height: 250px;
-        width: 250px;
-        background-size: cover;
-        border-radius: 50%;
-        background-position: center;
-    }
-}
-
 .footer {
     color: $light-text;
     padding: 10px;
@@ -134,6 +100,10 @@ a {
 
 .navbar-brand {
     cursor: default;
+}
+
+.navbar {
+  color: #f1f1f1;
 }
 
 .nav-item {
@@ -196,38 +166,7 @@ a {
         right: 25px;
         font-size: 35px;
     }
-    /* Next & previous buttons */
-    .prev,
-    .next {
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        width: auto;
-        padding: 16px;
-        margin-top: -50px;
-        color: white;
-        font-weight: bold;
-        font-size: 20px;
-        transition: 0.6s ease;
-        border-radius: 0 3px 3px 0;
-        user-select: none;
-        -webkit-user-select: none;
-        &.disabled {
-            cursor: default;
-            opacity: 0.2;
-        }
-    }
-    /* Position the "next button" to the right */
-    .next {
-        right: 0;
-        border-radius: 3px 0 0 3px;
-    }
-    /* On hover, add a black background color with a little bit see-through */
-    .prev:hover,
-    .next:hover {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .slide {
+    .item-details {
         img {
             max-height: calc(100vh - 120px - 60px - 30px - 34px);
             max-width: 1210px;
@@ -293,25 +232,27 @@ a {
         padding: 2px 16px;
         color: white;
     }
-    .thumbnail-list {
-        img {
-            height: 100px;
-            width: 100px;
-            opacity: 0.6;
-            object-fit: cover;
-            cursor: pointer;
-        }
-        .active,
-        img:hover {
-            opacity: 1;
-        }
-        .slick-disabled {
-            cursor: default;
-        }
-    }
-    .numbertext {
-        color: #f2f2f2;
-        font-size: 12px;
-        padding: 8px 12px;
-    }
 }
+
+.filters {
+  height: 70px;
+  background-color: black;
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 80px;
+  z-index: 1;
+  padding-right: 15px;
+  .filters__item {
+    color: #f1f1f1;
+    cursor: pointer;
+    opacity: 0.8;
+    &:hover {
+      opacity: 1;
+    }
+    &.filters__item--active {
+      opacity: 1;
+      text-decoration: underline;
+    }
+  }
+}
+
