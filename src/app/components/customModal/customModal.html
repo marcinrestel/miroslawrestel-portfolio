@@ -1,7 +1,7 @@
-<div class="custom-modal">
+<div class="custom-modal" ng-click="$ctrl.active = false">
   <div class="center-content-vertically">
     <span class="close" ng-click="$ctrl.active = false">&times;</span>
-    <div class="modal-content">
+    <div class="modal-content" ng-click="$event.preventDefault()">
       <div class="item-details">
         <div class="zoom-overlay-container">
           <img ng-src="{{ $ctrl.item.portfolioItemImage }}">

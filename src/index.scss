@@ -94,8 +94,9 @@ a {
 }
 
 .footer {
-    color: $light-text;
-    padding: 10px;
+  color: $light-text;
+  padding: 10px;
+  font-size: 0.9rem;
 }
 
 .navbar-brand {
@@ -234,14 +235,20 @@ a {
     }
 }
 
+.contact-info {
+  font-size: 0.9rem;
+}
+
 .filters {
-  height: 70px;
   background-color: black;
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
-  top: 80px;
-  z-index: 1;
-  padding-right: 15px;
+  font-size: 0.9rem;
+  @media (min-width: 992px) {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 80px;
+    z-index: 1;
+  }
+  padding: 10px 15px;
   .filters__item {
     color: #f1f1f1;
     cursor: pointer;

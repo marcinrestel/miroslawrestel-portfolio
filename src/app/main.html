@@ -14,7 +14,7 @@
       <img src="img/Mirosław Restel.png" height="60">
       <div class="d-flex flex-column">
         <a class="navbar-brand ml-3" href="#">Mirosław Restel</a>
-        <div class="ml-3">
+        <div class="ml-3 contact-info">
           <a href="tel:{{$ctrl.aboutPhone}}">{{$ctrl.aboutPhone}}</a> | <a
           href="mailto:{{$ctrl.aboutMail}}">{{$ctrl.aboutMail}}</a> |
           <a href="/" target="_blank" ng-href="{{'https://' + $ctrl.aboutLinkedin}}"><i
@@ -63,7 +63,7 @@
       </a>
     </div>
   </div>
-  <div class="filters d-flex justify-content-end align-items-center">
+  <div class="filters d-flex justify-content-center justify-content-lg-end align-items-center flex-column flex-lg-row">
     <div class="filters__item m-2" ng-class="{ 'filters__item--active': $ctrl.filteredType === item }" ng-repeat="item in $ctrl.availablePortfolioItemsTypes" ng-click="$ctrl.filteredType === item ? $ctrl.filteredType = null : $ctrl.filteredType = item">{{item}}</div>
   </div>
   <div id="portfolio" class="container-fluid container-fluid--no-padding">
