@@ -3,7 +3,7 @@ $dark-background: #191919;
 nav {
     opacity: 0.95;
     background-color: $dark-background;
-    height: 80px;
+    min-height: 80px;
 }
 
 body {
