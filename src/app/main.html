@@ -1,4 +1,4 @@
-<custom-modal item="$ctrl.currentPortfolioItem" active="$ctrl.modalActive" ng-if="$ctrl.modalActive"></custom-modal>
+<!--<custom-modal item="$ctrl.currentPortfolioItem" active="$ctrl.modalActive" ng-if="$ctrl.modalActive"></custom-modal>-->
 
 <div ng-show="!$ctrl.imagesLoaded" id="loader_div" class="sample-show-hide">
   <div class="loader">
@@ -68,16 +68,28 @@
   </div>
   <div id="portfolio" class="container-fluid container-fluid--no-padding">
     <div class="portfolio-container d-flex flex-wrap">
-      <div class="portfolio-item" ng-style="{'background-image':'url(\'{{eachItem.portfolioItemImage}}\')'}"
-           ng-repeat="eachItem in $ctrl.portfolioItems track by $index" ng-show="!$ctrl.filteredType || $ctrl.filteredType === eachItem.type">
-        <div class="portfolio-text d-flex justify-content-center text-center flex-column" data-id="{{$index}}"
-             ng-click="$ctrl.currentPortfolioItem = $ctrl.getPortfolioItemData($event); $ctrl.modalActive = true">
-          <div>
-            <h4>{{eachItem.name}}</h4>
-            <div>{{eachItem.shortDescription}}</div>
-          </div>
-        </div>
-      </div>
+
+      <a class="portfolio-item" href="{{eachItem.portfolioItemImageHQ}}" data-fancybox ng-repeat="eachItem in $ctrl.portfolioItems track by $index" ng-show="!$ctrl.filteredType || $ctrl.filteredType === eachItem.type">
+        <img loading="lazy" src="{{eachItem.portfolioItemImage}}" />
+      </a>
+
+<!--      <div class="portfolio-item" ng-style="{'background-image':'url(\'{{eachItem.portfolioItemImage}}\')'}"-->
+<!--           ng-repeat="eachItem in $ctrl.portfolioItems track by $index" ng-show="!$ctrl.filteredType || $ctrl.filteredType === eachItem.type">-->
+<!--        <div class="portfolio-text d-flex justify-content-center text-center flex-column" data-id="{{$index}}"-->
+<!--             ng-click="$ctrl.currentPortfolioItem = $ctrl.getPortfolioItemData($event); $ctrl.modalActive = true">-->
+<!--&lt;!&ndash;          <div>&ndash;&gt;-->
+<!--&lt;!&ndash;            <h4>{{eachItem.name}}</h4>&ndash;&gt;-->
+<!--&lt;!&ndash;            <div>{{eachItem.shortDescription}}</div>&ndash;&gt;-->
+<!--&lt;!&ndash;          </div>&ndash;&gt;-->
+<!--        </div>-->
+<!--      </div>-->
+
+      <script>
+        console.log(Fancybox)
+        Fancybox.bind('[data-fancybox]', {
+          //
+        });
+      </script>
     </div>
   </div>
   <div class="footer d-flex align-items-center justify-content-center">
