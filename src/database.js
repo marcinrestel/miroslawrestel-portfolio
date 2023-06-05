@@ -9,6 +9,6 @@ angular
     }, {
       src: 'img/portfolio-items/(4) ILLUSTRATIONS/2048/(1) 3d-DNA-modell-visualization.jpg'
     }, {
-      src: 'img/portfolio-items/(1) ARCHITEKTURAL VISUALIZATION/2048/(1) architectural-visualization-3d-house-view.jpg'
+      src: 'img/portfolio-items/(1) ARCHITECTURAL VISUALIZATION/2048/(1) architectural-visualization-3d-house-view.jpg'
     }]
   });
